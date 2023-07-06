@@ -8,7 +8,6 @@ import Personas from './indexPersonas';
 import Narratives from './indexNarratives';
 import Tutorials from './indexTutorials';
 import Community from './indexCommunity'
-//import RealAdviser from './indexRealAdviser';
 import Home from './indexHome';
 import NarrativesScreen from '../screens/Narratives/NarrativesScreen';
 import SettingsScreen from '../screens/Settings/settingsScreen';

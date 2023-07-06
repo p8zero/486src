@@ -37,7 +37,7 @@ export default function HomeScreen({navigation}) {
               />
             <BackButtonCreateNarratives
             label={'back button'}
-            onPress={() => {navigation.navigate('NarrativesScreen')}}
+            onPress={() => {navigation.navigate('YourCommunityScreen')}}
             icon={<Ionicons name="add-outline" size={30} color="#FFF5EF" />}
           />
             </View>
@@ -70,7 +70,7 @@ export default function HomeScreen({navigation}) {
             borderRadius: 30,
             marginLeft: '5%', 
             marginTop: '10%'}}
-      onPress={() => {clarityInTheMoment = true; navigation.navigate('ChooseProfiles');
+      onPress={() => {clarityInTheMoment = true; navigation.navigate('YourNarativeScreen');
                       mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
     }}
       >
@@ -86,7 +86,6 @@ export default function HomeScreen({navigation}) {
           Want to be there but don't know how
         </Text>
 
-        
 
         </View>
     </TouchableOpacity>
