@@ -55,6 +55,108 @@ export default function YourNarativeScreen({navigation}) {
           Community
         </Text>
             </View>
+
+            <TouchableOpacity 
+      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
+      onPress={() => {clarityInTheMoment = true; navigation.navigate('CommunityStory'); 
+                      mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
+            }}>
+        <View style={{flex: 1, justifyContent: 'center'}}>
+
+        <View style={{alignItems:'flex-end', marginTop: '40%'}}>
+        <TouchableOpacity
+          // onPress={() => {
+          //   getData();
+          //   mixpanel.timeEvent("Narrative Creation");
+          //   mixpanel.track("Narrative_ChoosePersonas")
+          //   navigation.navigate('Perspective', {
+          //     people: {pData},
+          //     users: userNames,
+          //     genders: userGenders,
+          //     ages: userAges,
+          //     traits: userTraits
+          //   });
+          // }}
+            style={{
+              backgroundColor: '#F6DEDC',
+              borderTopLeftRadius: 50,
+              borderBottomLeftRadius: 50,
+              width: 125,
+              height: 35,
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginRight:'0%',
+              marginBottom: '10%'
+            }}>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontWeight: '300',
+                fontSize: 20,
+                letterSpacing: 3,
+                color: '#18163A',
+                fontWeight: '300',
+                fontFamily: 'WorkSans-Regular',
+              }}>
+              connect
+            </Text>
+          </TouchableOpacity>
+          </View>
+
+
+        </View>
+      </TouchableOpacity>
+          
+      <TouchableOpacity 
+      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
+      onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
+                      mixpanel.track('ClarityFuture', {'Flow': 'Future'});
+            }}>
+        <View style={{flex: 1, justifyContent: 'center'}}>
+        
+        <View style={{alignItems:'flex-end', marginTop: '40%'}}>
+        <TouchableOpacity
+          onPress={() => {
+            getData();
+            mixpanel.timeEvent("Narrative Creation");
+            mixpanel.track("Narrative_ChoosePersonas")
+            navigation.navigate('Perspective', {
+              people: {pData},
+              users: userNames,
+              genders: userGenders,
+              ages: userAges,
+              traits: userTraits
+            });
+          }}
+            style={{
+              backgroundColor: '#F6DEDC',
+              borderTopLeftRadius: 50,
+              borderBottomLeftRadius: 50,
+              width: 125,
+              height: 35,
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginRight:'0%',
+              marginBottom: '10%'
+            }}>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontWeight: '300',
+                fontSize: 20,
+                letterSpacing: 3,
+                color: '#18163A',
+                fontWeight: '300',
+                fontFamily: 'WorkSans-Regular',
+              }}>
+              connect
+            </Text>
+          </TouchableOpacity>
+          </View>
+
+
+        </View>
+      </TouchableOpacity>
           
 
             <ScrollView>

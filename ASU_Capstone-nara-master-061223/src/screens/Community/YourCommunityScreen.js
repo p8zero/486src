@@ -65,12 +65,25 @@ export default function YourCommunityScreen({navigation}) {
             color: '#18163A', 
             textAlign: 'left',
             fontWeight: '300', 
-            fontSize: 20,
+            fontSize: 24,
+            marginRight: '5%',
+            //marginTop: '10%',
+            marginLeft: '5%',
+            letterSpacing: 2,}}>
+            How it works
+        </Text>
+        <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#18163A', 
+            textAlign: 'left',
+            fontWeight: '300', 
+            fontSize: 16,
+            marginTop: '10%',
             marginRight: '5%',
             marginLeft: '5%',
             letterSpacing: 2,}}>
-          "Where does the status quo take us & how does it go if we did things differently?"
+            For each story you create, you have the opportunity to connect with...
         </Text>
+
         </View>
       </TouchableOpacity>
       <TouchableOpacity 
@@ -83,19 +96,73 @@ export default function YourCommunityScreen({navigation}) {
             color: '#18163A', 
             textAlign: 'left',
             fontWeight: '300', 
-            fontSize: 20,
+            fontSize: 24,
+            marginRight: '5%',
+            //marginTop: '-10%',
+            marginLeft: '5%',
+            letterSpacing: 2,}}>
+            Requires Mutual Connection
+        </Text>
+        <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#18163A', 
+            textAlign: 'left',
+            fontWeight: '300', 
+            fontSize: 16,
+            marginTop: '10%',
             marginRight: '5%',
             marginLeft: '5%',
             letterSpacing: 2,}}>
-          "Where does the status quo take us & how does it go if we did things differently?"
+            For each story you create, you have the opportunity to connect with...
         </Text>
         </View>
       </TouchableOpacity>
+
+      <View style={{alignItems:'flex-end', marginTop: '5%'}}>
+          <TouchableOpacity
+          onPress={() => {
+            getData();
+            mixpanel.timeEvent("Narrative Creation");
+            mixpanel.track("Narrative_ChoosePersonas")
+            navigation.navigate('Perspective', {
+              people: {pData},
+              users: userNames,
+              genders: userGenders,
+              ages: userAges,
+              traits: userTraits
+            });
+          }}
+            style={{
+              backgroundColor: '#18163A',
+              borderTopLeftRadius: 50,
+              borderBottomLeftRadius: 50,
+              width: 205,
+              height: 50,
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginBottom: '10%'
+            }}>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontWeight: '300',
+                fontSize: 20,
+                letterSpacing: 3,
+                color: '#FFFFFF',
+                fontWeight: '300',
+                fontFamily: 'WorkSans-Regular',
+              }}>
+              swipe to begin
+            </Text>
+          </TouchableOpacity>
+          </View>
+
             <ScrollView>
         <NarrativeFlatList input = {input}/>
         </ScrollView>
 
         </SafeAreaView>
+
+        
         )
 }
 
