@@ -30,21 +30,19 @@ export default function YourCommunityScreen({navigation}) {
             flexDirection: 'row',
             alignItems: 'center',
           }}>
-
-            <BackButtonMenu
-                label={'back button'}
-                onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
-                icon={<MenuIcon name="menu-icon" size={24} color="#18163A" />}
-              />
-           <BackButton
-                label={'back button'}
-                onPress={() => {navigation.navigate('CommunityScreen')}}
-                icon={<Ionicons name="close" size={24} color="#18163A" />}
-              />
           
           </View>
 
-          <View style={{}}>
+          <View style={{backgroundColor:'#FFF5EF',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+            marginRight: '25%',
+            marginTop: '8%', 
+            height: 75,
+            borderTopRightRadius: 50,
+            borderBottomRightRadius: 50,
+
+          }}>
         <Text style={{
           fontFamily: 'WorkSans-Light', 
           fontSize: 24, 
@@ -52,18 +50,47 @@ export default function YourCommunityScreen({navigation}) {
           letterSpacing: 2,
           color: '#18163A',
           marginLeft: '5%',
-          marginTop: '5%',
+          marginTop: '0%',
           }}>
-          Your Community
+          Welcome to Your Community
         </Text>
             </View>
-            
-            <TextInput
-            style={styles.search}
-            onChangeText={newText => doSearch(newText)}
-            defaultValue={searchNarrative}
-        /> 
-
+            <TouchableOpacity 
+      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderTopRightRadius: 50, borderBottomLeftRadius: 50, }}
+      onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
+                      mixpanel.track('ClarityFuture', {'Flow': 'Future'});
+            }}>
+        <View style={{flex: 1, justifyContent: 'center'}}>
+        <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#18163A', 
+            textAlign: 'left',
+            fontWeight: '300', 
+            fontSize: 20,
+            marginRight: '5%',
+            marginLeft: '5%',
+            letterSpacing: 2,}}>
+          "Where does the status quo take us & how does it go if we did things differently?"
+        </Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity 
+      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderTopRightRadius: 50, borderBottomLeftRadius: 50, }}
+      onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
+                      mixpanel.track('ClarityFuture', {'Flow': 'Future'});
+            }}>
+        <View style={{flex: 1, justifyContent: 'center'}}>
+        <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#18163A', 
+            textAlign: 'left',
+            fontWeight: '300', 
+            fontSize: 20,
+            marginRight: '5%',
+            marginLeft: '5%',
+            letterSpacing: 2,}}>
+          "Where does the status quo take us & how does it go if we did things differently?"
+        </Text>
+        </View>
+      </TouchableOpacity>
             <ScrollView>
         <NarrativeFlatList input = {input}/>
         </ScrollView>
