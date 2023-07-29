@@ -20,11 +20,34 @@ import { DrawerActions } from '@react-navigation/native';
 import BackButtonMenu from '../../components/backButtonMenu';
 import YourCommunityScreen from './YourCommunityScreen';
 import YourNarativeScreen from './YourNarativeScreen';
+import firestore from '@react-native-firebase/firestore';
+import UsersInfo from '../Account/usersInfo';
 //import OnBoarding from './OnBoarding';
+
 
 export default function CommunityScreen({navigation}) {
 
+  const { user } = useContext(AuthContextNew)
+  const extractedDataList = [];
+  //import user narratives
+  const currentUserData = firestore()
+    .collection('Users')
+    .doc(user.uid)
+    .get()
+  const currentUserNarratives = currentUserData.data().narratives;
+  currentUserNarratives.map(narrative => {
+    const {data, negativeFeeling, positiveFeeling, prediction, trait} = narrative;
+    extractedDataList.push([
+      data,
+      negativeFeeling,
+      positiveFeeling,
+      prediction,
+      trait,
+    ]);
 
+    return null;
+  });
+  console.log(extractedDataList)
   global.clarityInTheMoment = false
   global.clarityInTheFuture = false
 
@@ -72,3 +95,4 @@ const styles = StyleSheet.create({
     paddingTop: 20
   }
 })
+
