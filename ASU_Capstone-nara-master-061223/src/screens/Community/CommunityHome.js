@@ -20,13 +20,13 @@ import { DrawerActions } from '@react-navigation/native';
 import BackButtonMenu from '../../components/backButtonMenu';
 import YourCommunityScreen from './YourCommunityScreen';
 import YourNarativeScreen from './YourNarativeScreen';
-import firestore from '@react-native-firebase/firestore';
-import UsersInfo from '../Account/usersInfo';
+//import firestore from '@react-native-firebase/firestore';
+//import UsersInfo from '../Account/usersInfo';
 //import OnBoarding from './OnBoarding';
 
 
 export default function CommunityScreen({navigation}) {
-
+/*
   const { user } = useContext(AuthContextNew)
   const extractedDataList = [];
   //import user narratives
@@ -48,6 +48,7 @@ export default function CommunityScreen({navigation}) {
     return null;
   });
   console.log(extractedDataList)
+  */
   global.clarityInTheMoment = false
   global.clarityInTheFuture = false
 
