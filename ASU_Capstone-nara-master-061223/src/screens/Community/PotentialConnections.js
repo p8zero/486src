@@ -22,7 +22,7 @@ import YourCommunityScreen from './YourCommunityScreen';
 import YourNarativeScreen from './YourNarativeScreen';
 //import OnBoarding from './OnBoarding';
 
-export default function CommunityScreen({navigation}) {
+export default function PotentialConnections({navigation}) {
 
   const [input, setInput] = useState('') 
   const [searchNarrative, doSearch] = useState('') 

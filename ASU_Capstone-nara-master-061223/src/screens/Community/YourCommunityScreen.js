@@ -88,8 +88,7 @@ export default function YourCommunityScreen({navigation}) {
       </TouchableOpacity>
       <TouchableOpacity 
       style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderTopRightRadius: 50, borderBottomLeftRadius: 50, }}
-      onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
-                      mixpanel.track('ClarityFuture', {'Flow': 'Future'});
+      onPress={() => {clarityInTheFuture = true; navigation.navigate('CommunityStory'); 
             }}>
         <View style={{flex: 1, justifyContent: 'center'}}>
         <Text style={{fontFamily: 'WorkSans-light', 
@@ -156,9 +155,9 @@ export default function YourCommunityScreen({navigation}) {
           </TouchableOpacity>
           </View>
 
-            <ScrollView>
+            {/* <ScrollView>
         <NarrativeFlatList input = {input}/>
-        </ScrollView>
+        </ScrollView> */}
 
         </SafeAreaView>
 

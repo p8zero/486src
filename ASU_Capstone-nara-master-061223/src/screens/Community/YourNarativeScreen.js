@@ -6,7 +6,7 @@ import MenuIcon from '../../assets/menu.svg';
 import BackButton from '../../components/backButton';
 import firestore from '@react-native-firebase/firestore';
 import BackButtonMenu from '../../components/backButtonMenu';
-import NarrativeFlatList from '../../components/flatListNarratives';
+import CommunityFlatList from '../../components/flatListCommunication';
 import BackButtonCreateNarratives from '../../components/backButtonCreateNarratives';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -55,15 +55,52 @@ export default function YourNarativeScreen({navigation}) {
           Community
         </Text>
             </View>
+            <ScrollView>
 
-            <TouchableOpacity 
-      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
+            {/* <TouchableOpacity 
+      style={{backgroundColor: '#FFF5EF', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
       onPress={() => {clarityInTheMoment = true; navigation.navigate('CommunityStory'); 
-                      mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
+                      //mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
             }}>
         <View style={{flex: 1, justifyContent: 'center'}}>
 
-        <View style={{alignItems:'flex-end', marginTop: '40%'}}>
+        <View style={{}}>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 24, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '0%',
+          }}>
+          a's Story with b
+        </Text>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 18, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '2%',
+          }}>
+          (b is a's r)
+        </Text>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 20, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '5%',
+          }}>
+          short discription
+        </Text>
+      </View>
+
+        <View style={{alignItems:'flex-end'}}>
         <TouchableOpacity
           // onPress={() => {
           //   getData();
@@ -86,7 +123,7 @@ export default function YourNarativeScreen({navigation}) {
               alignItems: 'center',
               justifyContent: 'center',
               marginRight:'0%',
-              marginBottom: '10%'
+              //marginBottom: '30%'
             }}>
             <Text
               style={{
@@ -108,26 +145,62 @@ export default function YourNarativeScreen({navigation}) {
       </TouchableOpacity>
           
       <TouchableOpacity 
-      style={{backgroundColor: '#EDBDBA', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
-      onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
-                      mixpanel.track('ClarityFuture', {'Flow': 'Future'});
+      style={{backgroundColor: '#FFF5EF', marginLeft: '3%', marginRight: '3%', height: 220, flexDirection: 'row', marginTop: '5%', borderRadius: 50, }}
+      onPress={() => {clarityInTheMoment = true; navigation.navigate('CommunityStory'); 
+                      //mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
             }}>
         <View style={{flex: 1, justifyContent: 'center'}}>
-        
-        <View style={{alignItems:'flex-end', marginTop: '40%'}}>
+
+        <View style={{}}>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 24, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '0%',
+          }}>
+          a's Story with b
+        </Text>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 18, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '2%',
+          }}>
+          (b is a's r)
+        </Text>
+        <Text style={{
+          fontFamily: 'WorkSans-Light', 
+          fontSize: 20, 
+          fontWeight: '300', 
+          letterSpacing: 2,
+          color: '#18163A',
+          marginLeft: '5%',
+          marginTop: '5%',
+          }}>
+          short discription
+        </Text>
+      </View>
+
+        <View style={{alignItems:'flex-end'}}>
         <TouchableOpacity
-          onPress={() => {
-            getData();
-            mixpanel.timeEvent("Narrative Creation");
-            mixpanel.track("Narrative_ChoosePersonas")
-            navigation.navigate('Perspective', {
-              people: {pData},
-              users: userNames,
-              genders: userGenders,
-              ages: userAges,
-              traits: userTraits
-            });
-          }}
+          // onPress={() => {
+          //   getData();
+          //   mixpanel.timeEvent("Narrative Creation");
+          //   mixpanel.track("Narrative_ChoosePersonas")
+          //   navigation.navigate('Perspective', {
+          //     people: {pData},
+          //     users: userNames,
+          //     genders: userGenders,
+          //     ages: userAges,
+          //     traits: userTraits
+          //   });
+          // }}
             style={{
               backgroundColor: '#F6DEDC',
               borderTopLeftRadius: 50,
@@ -137,7 +210,7 @@ export default function YourNarativeScreen({navigation}) {
               alignItems: 'center',
               justifyContent: 'center',
               marginRight:'0%',
-              marginBottom: '10%'
+              //marginBottom: '30%'
             }}>
             <Text
               style={{
@@ -156,11 +229,11 @@ export default function YourNarativeScreen({navigation}) {
 
 
         </View>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
           
 
-            <ScrollView>
-        <NarrativeFlatList input = {input}/>
+            
+        <CommunityFlatList input = {input}/>
         </ScrollView>
 
         </SafeAreaView>
