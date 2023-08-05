@@ -23,7 +23,7 @@ import YourNarativeScreen from './YourNarativeScreen';
 import BackButtonNavNarratives from "../../components/backButtonNavNarratives";
 //import OnBoarding from './OnBoarding';
 
-export default function PotentialConnections({navigation}) {
+export default function Invitations({navigation}) {
 
   const [input, setInput] = useState('') 
   const [searchNarrative, doSearch] = useState('') 
@@ -77,7 +77,7 @@ export default function PotentialConnections({navigation}) {
           marginLeft: '5%',
           //marginTop: '0%',
           }}>
-          Potential Connections
+          Invitations
         </Text>
             </View>
 

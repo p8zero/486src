@@ -7,6 +7,8 @@ import YourCommunityScreen from '../screens/Community/YourCommunityScreen';
 import CommunityStory from '../screens/Community/CommunityStory';
 import ComunityProfile from '../screens/Community/SeeCommunityButton';
 import PotentialConnections from '../screens/Community/PotentialConnections';
+import Invitations from '../screens/Community/Invitations';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +21,8 @@ const CommunityStack = () => {
         <Stack.Screen component={CommunityStory} name="CommunityStory"/>
         <Stack.Screen component={ComunityProfile} name="ComunityProfile"/>
         <Stack.Screen component={PotentialConnections} name="PotentialConnections"/>
+        <Stack.Screen component={Invitations} name="Invitations"/>
+
          </Stack.Navigator>
         
     )

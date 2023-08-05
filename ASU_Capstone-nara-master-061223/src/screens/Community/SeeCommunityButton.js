@@ -128,19 +128,19 @@ const SeeCommunityButton = ({ route, navigation }) => {
   };
 
   const edit = () => {
-    navigation.navigate("EditNarratives", {
-      narrData: CheckData(),
-      flow: flow,
-      mainChar: mainChar,
-      otherChar: otherChar,
-      relationship: relationship,
-      emotions: emotions,
-      gender: gender,
-      age: age,
-      trait: nTrait,
-      id: id,
-      editNarr: true,
-      titleName: title
+    navigation.navigate("Invitations", {
+    //   narrData: CheckData(),
+    //   flow: flow,
+    //   mainChar: mainChar,
+    //   otherChar: otherChar,
+    //   relationship: relationship,
+    //   emotions: emotions,
+    //   gender: gender,
+    //   age: age,
+    //   trait: nTrait,
+    //   id: id,
+    //   editNarr: true,
+    //   titleName: title
     })
   }
 
