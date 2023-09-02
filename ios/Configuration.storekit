@@ -1,0 +1,103 @@
+{
+  "identifier" : "788F5232",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6446095398",
+      "localizations" : [
+        {
+          "description" : "Free 1 week trial",
+          "displayName" : "Naralytics",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Naralytics",
+      "referenceName" : "Naralytics",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6445966921",
+    "_developerTeamID" : "2J782M5C32",
+    "_lastSynchronizedDate" : 705093751.12010503
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21279516",
+      "localizations" : [
+
+      ],
+      "name" : "Nara Access",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6446420078",
+          "introductoryOffer" : {
+            "internalID" : "DA240197",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Get access to the Nara app",
+              "displayName" : "Nara Access monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "nara_499_m",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Nara Access Monthly",
+          "subscriptionGroupID" : "21279516",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "54.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6446420375",
+          "introductoryOffer" : {
+            "internalID" : "0DE0D910",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Complete access to the Nara app",
+              "displayName" : "Nara Access yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "nara_5499_y",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Nara Access Yearly",
+          "subscriptionGroupID" : "21279516",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
