@@ -152,7 +152,7 @@ const CreateProfilePersonas = ({navigation, route}) => {
         </View>
 
         
-          <View style={{flex: 1, marginLeft: '5%', marginTop: '8%'}}> 
+          <View style={{marginLeft: '5%', marginTop: '8%'}}> 
             <InputFieldPersonas 
                 label={"Person's Name"}
                 name={'Name'}
@@ -171,10 +171,10 @@ const CreateProfilePersonas = ({navigation, route}) => {
               />
           </View>
 
-          <ScrollView horizontal = {true} showsHorizontalScrollIndicator={false} 
-             style={{marginTop: 100, marginHorizontal: '5%'}}>
+          <View
+             style={{marginTop: '5%', marginHorizontal: '5%', marginBottom: '10%'}}>
             {horizontalCheckboxGroupContainerGender()}
-            </ScrollView>
+            </View>
 
           <View style={styles.continue_button_container}>
               <TouchableOpacity style={styles.continue_button}

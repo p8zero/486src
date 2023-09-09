@@ -56,7 +56,6 @@ const InputFieldPersonas = ({
       <TextInput
         placeholder={label}
         style={{
-          flex: 1,
           paddingLeft: 20,
           fontSize: 16,
           fontFamily: "WorkSans-Light",

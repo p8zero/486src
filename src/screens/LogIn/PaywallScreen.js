@@ -8,8 +8,10 @@ import React, { useEffect } from 'react';
 import RegisterScreen2 from './registerScreen2';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import BackButton from '../../components/backButton';
+import {AuthContextNew} from '../../navigation/authProvider';
 
 const PaywallScreen = () => {
+
   const navigation = useNavigation();
   const [msg, setMsg] = React.useState('');
   

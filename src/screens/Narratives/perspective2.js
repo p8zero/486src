@@ -433,7 +433,7 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updateNegativeAndForceful(2)}
           >
-            <Text style={styles.text}>Irritated</Text>
+            <Text style={styles.text}>Resentful</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={

@@ -17,38 +17,44 @@ import moment from 'moment';
 import {AuthContextNew} from '../../navigation/authProvider';
 import TermsConditions from './TermsConditions';
 import { useNavigation } from '@react-navigation/native';
+import ProgressLoader from "rn-progress-loader";
+import { Mixpanel } from 'mixpanel-react-native';
 
-const RegisterScreen2 = ({navigation: {goBack}}) => {
+const RegisterScreen2 = ({ navigation: { goBack } }) => {
   const navigation = useNavigation();
   const [inputs, setInputs] = useState({
     username: {
-      value: '',
+      value: "",
       isValid: true,
     },
     email: {
-      value: '',
+      value: "",
       isValid: true,
     },
     password: {
-      value: '',
+      value: "",
       isValid: true,
     },
     gender: {
-      value: '',
+      value: "",
       isValid: true,
     },
     dob: {
-      value: 'Date of Birth',
+      value: "Date of Birth",
       isValid: true,
     },
     date: {
       value: new Date(),
       isValid: true,
     },
+    subscription: {
+      value: "",
+      status: false,
+    },
   });
   const [open, setOpen] = useState(false);
   const [isSelected, setSelection] = useState(false);
-  const {register} = useContext(AuthContextNew);
+  const { register, isUserSubscribed, loading } = useContext(AuthContextNew);
 
   function inputChangedHandler(inputIdentifier, enteredValue) {
     setInputs(currentInput => {
@@ -61,7 +67,7 @@ const RegisterScreen2 = ({navigation: {goBack}}) => {
 
   const colorScheme = useColorScheme();
 
-  function submitRegisterData() {
+  async function submitRegisterData() {
     const dataToVerify = {
       username: inputs.username.value,
       email: inputs.email.value,
@@ -126,19 +132,34 @@ const RegisterScreen2 = ({navigation: {goBack}}) => {
         };
       });
       return;
-    }
-
-    {isSelected  
+    } else {
+    // WE NEED TO REGISTER FIRST AND THEN GO FOR PAYMENT,
+    // LATER WE WILL UPDATE EITHER SUBSCRIBED OR NOT
+    //navigation.navigate("PaywallScreenM");
+    {
+      isSelected;
       register(
         inputs.email.value,
         inputs.password.value,
         inputs.username.value,
         inputs.dob.value,
-       // inputs.gender.value,
-      ) 
-      //: Alert.alert("Please check the terms and conditions box")}
-    }}
+        inputs.gender.value,
+        () => {
+          console.log("Paywall Screen Navigated");
+          navigation.navigate("PaywallScreenM");
+        }
 
+        // inputs.gender.value,
+      );
+      //: Alert.alert("Please check the terms and conditions box")}
+    }
+  }
+}
+
+
+const trackAutomaticEvents = true;
+const mixpanel = new Mixpanel("2100a249cd1d52d225d1c040909d6c79", trackAutomaticEvents);
+mixpanel.init();
 
 
   return (
@@ -182,7 +203,7 @@ const RegisterScreen2 = ({navigation: {goBack}}) => {
           onChangeText={text => inputChangedHandler('email', text)}
         />
         {!inputs.email.isValid && (
-          <Text style={styles.errorText}>Invalid Email</Text>
+          <Text style={styles.errorText}>Invalid Email or Email Already in Use</Text>
         )}
         <RInputField
           label={'Password'}
@@ -261,6 +282,7 @@ const RegisterScreen2 = ({navigation: {goBack}}) => {
               label={'Sign Up'}
               onPress={() => {
                 submitRegisterData();
+                mixpanel.track("Sign Up", {"Sign Up": "Sign Up"});
               }}
             />
         </View>
@@ -295,6 +317,13 @@ const RegisterScreen2 = ({navigation: {goBack}}) => {
                     </Text>
           </TouchableOpacity>
         </View>
+        <ProgressLoader
+          visible={loading}
+          isModal={true}
+          isHUD={true}
+          hudColor={"#18163A"}
+          color={"#FFF5ef"}
+        />
       </ScrollView>
     </SafeAreaView>
   );

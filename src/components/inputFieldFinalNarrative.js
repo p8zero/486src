@@ -29,7 +29,7 @@ const InputField = ({
       
         <TextInput
           placeholder={label}
-          style={{flex: 1,letterSpacing: 2, color: textColor, fontWeight: '300', fontSize: 18, fontFamily: 'WorkSans-Light' }}
+          style={{paddingTop: 12, letterSpacing: 2, color: textColor, fontWeight: '300', fontSize: 18, fontFamily: 'WorkSans-Light' }}
           keyboardType={keyboardType}
           value={value}
           onChangeText={onChangeText}

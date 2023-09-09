@@ -4,23 +4,13 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput,
   TouchableOpacity,
   Dimensions,
-  ScrollView
 } from 'react-native';
-import BackButton from '../../components/backButton';
-import Navigation from '../../components/navigationBar';
 import BackButtonNav from '../../components/backButtonNav';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import InputFieldPersonas from '../../components/Personas/inputFieldPg2Personas';
-import SeeProfilePersonas from './SeeProfilePersonas';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import DropDownPicker from 'react-native-dropdown-picker';
-import CustomButtonPersonas from '../../components/Personas/customButtonPg1Personas';
 import firestore from '@react-native-firebase/firestore';
 import {AuthContextPersonas} from '../../navigation/AuthProviderPersonas';
-import SeeProfileButtons from './SeeProfileButtons';
 import BouncyCheckboxGroup, {
   ICheckboxButton,
 } from 'react-native-bouncy-checkbox-group';
@@ -176,7 +166,7 @@ const CreateProfilePersonas = ({navigation}) => {
         </View>
 
         
-          <View style={{flex: 1, marginLeft: '5%', marginTop: '8%'}}> 
+          <View style={{ marginLeft: '5%', marginTop: '8%'}}> 
             <InputFieldPersonas 
                 label={"Person's Name"}
                 name={'Name'}
@@ -193,10 +183,10 @@ const CreateProfilePersonas = ({navigation}) => {
               />
           </View>
 
-          <ScrollView horizontal = {true} showsHorizontalScrollIndicator={false} 
-             style={{marginTop: 80, marginHorizontal: '5%'}}>
+          <View
+             style={{marginTop: '5%', marginHorizontal: '5%', marginBottom: '10%'}}>
             {horizontalCheckboxGroupContainerGender()}
-            </ScrollView>
+            </View>
 
           <View style={styles.continue_button_container}>
               <TouchableOpacity style={styles.continue_button}
@@ -225,7 +215,6 @@ const styles = StyleSheet.create({
   },
   
   bottom_container: {
-    
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#EDBDBA',

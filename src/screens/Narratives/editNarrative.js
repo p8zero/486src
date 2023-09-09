@@ -4934,21 +4934,7 @@ export default function EditNarratives({ route, navigation }) {
                     {item.narrativeElement}
                   </Text>
                   </View>
-                  <View style={{alignItems: 'center', justifyContent: 'center', marginLeft: '75%',  height: 50, width: 50, backgroundColor: '#F6DEDC', borderBottomRightRadius: 30, borderTopLeftRadius: 30}}>
-                  <Text
-                    style={{
-                      flexWrap: "wrap",
-                      paddingHorizontal: 5,
-                      fontWeight: "300",
-                      fontSize: 20,
-                      color: "#18163A",
-                      fontFamily: "WorkSans-Regular",
-                      letterSpacing: 2,
-                    }}
-                  >
-                    {item.countSelected}
-                  </Text>
-                  </View>
+
               </TouchableOpacity>
             )}
             style={{ marginTop: "5%", paddingLeft: "3%" }}
@@ -5235,3 +5221,19 @@ const styles = StyleSheet.create({
     color: "#18163A",
   },
 });
+
+//<View style={{alignItems: 'center', justifyContent: 'center', marginLeft: '75%',  height: 50, width: 50, backgroundColor: '#F6DEDC', borderBottomRightRadius: 30, borderTopLeftRadius: 30}}>
+//<Text
+  //style={{
+    //flexWrap: "wrap",
+    //paddingHorizontal: 5,
+    //fontWeight: "300",
+    //fontSize: 20,
+    //color: "#18163A",
+    //fontFamily: "WorkSans-Regular",
+    //letterSpacing: 2,
+  //}}
+//>
+  //{item.countSelected}
+//</Text>
+//</View>

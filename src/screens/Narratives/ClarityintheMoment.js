@@ -110,7 +110,7 @@ mixpanel.init();
             marginRight: '5%',
             marginLeft: '5%', 
             letterSpacing: 0,}}>
-            Clarity around how might they feel going forward or how they might feel if things went differently
+            Clarity around how might they feel going forward or how they might feel if things changed
         </Text>
         </View>
       </TouchableOpacity>

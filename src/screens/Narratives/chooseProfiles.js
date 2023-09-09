@@ -186,7 +186,7 @@ export default function NextScreen({ navigation }) {
       </View>
 
       <InputField
-      label="search by narrator"
+      label="search by character"
       value={input}
       onChangeText={setInput}
       color = {colorScheme}

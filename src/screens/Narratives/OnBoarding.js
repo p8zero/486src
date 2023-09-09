@@ -64,7 +64,7 @@ export default function OnBoarding({navigation}) {
             marginBottom: '0%',
             marginTop: '5%'
         }}>
-            If you've ever wondered...
+            When you're wondering...
         </Text>
         <Text style = {{
             color: '#18163A',
@@ -116,7 +116,7 @@ export default function OnBoarding({navigation}) {
             marginBottom: '0%',
             marginTop: '5%'
         }}>
-           “how might they feel if things went differently?”
+           “how might they feel if things changed?”
         </Text>
 
         <Text style={{            
@@ -130,7 +130,7 @@ export default function OnBoarding({navigation}) {
           marginBottom: '0%',
           marginTop: '5%'}}>
 
-nara can help you find some clarity
+nara is a private space to think things through, to help you find some clarity
 
         </Text>
 
@@ -145,7 +145,7 @@ nara can help you find some clarity
             marginBottom: '0%',
             marginTop: '5%'
         }}>
-Not to establish an objective truth, to find a cut and dry solution or to define what's right and what's wrong
+Not to establish an objective truth or to define what's right and what's wrong
         </Text>
 
         <Text style={{            
@@ -159,7 +159,7 @@ Not to establish an objective truth, to find a cut and dry solution or to define
           marginBottom: '0%',
           marginTop: '5%'}}>
 
-But to understand how someone might think and feel in a given moment
+But to understand what led them to feel this way and how they might feel going forward
 
         </Text>
 
@@ -174,7 +174,7 @@ But to understand how someone might think and feel in a given moment
           marginBottom: '10%',
           marginTop: '5%'}}>
 
-Or discover how they might think and feel if things were different
+Or to discover what has to change for them to feel differently and how they might feel if things changed
 
         </Text>
         
@@ -241,7 +241,7 @@ Exposition - what led them to feel this way or what has to change for them to fe
           marginLeft: '10%',
           marginBottom: '0%',
           marginTop: '5%'}}>
-Foreshadowing - how might they feel going forward or how they might feel if things went differently
+Foreshadowing - how might they feel going forward or how they might feel if things changed
 
         </Text>
         

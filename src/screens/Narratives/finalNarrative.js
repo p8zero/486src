@@ -233,7 +233,6 @@ export default function FinalNarratives({ route, navigation }) {
       
       <View
         style={{
-          flex: 1,
           marginTop: "5%",
           backgroundColor: "#FFF5EF",
           borderTopRightRadius: 50,
@@ -253,7 +252,8 @@ export default function FinalNarratives({ route, navigation }) {
           style={{
             paddingBottom: "5%",
             paddingTop: "10%",
-            height: SCREEN_HEIGHT,
+            marginTop: '2%',
+            marginBottom: '60%'
           }}
         >
           <Text style={styles.descStyle}>
