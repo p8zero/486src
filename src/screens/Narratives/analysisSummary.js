@@ -340,7 +340,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     textAlign: "left",
     paddingTop: "8%",
-    paddingBottom: '%',
+    paddingBottom: '2%',
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 18,
