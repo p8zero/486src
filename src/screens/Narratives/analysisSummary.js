@@ -323,6 +323,7 @@ const styles = StyleSheet.create({
     color: "#000000",
     fontFamily: "WorkSans-Regular",
     // fontFamily: 'AppleSDGothicNeo-Thin',
+    
   },
   titleStyle: {
     flexWrap: "wrap",
