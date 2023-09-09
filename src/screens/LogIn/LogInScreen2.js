@@ -7,14 +7,14 @@ import {
   StyleSheet,
   useColorScheme,
 } from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import NaraLogo from '../../../Used Fonts/logo-09 app_adobe_express.svg';
 import CustomButton from '../../components/LogIn/customButton';
 import RCustomButton from '../../components/SignUp/rCustomButton';
 import InputField from '../../components/LogIn/inputField';
 import {AuthContextNew} from '../../navigation/authProvider';
-import Purchases from "react-native-purchases";
-import ProgressLoader from "rn-progress-loader";
-import { Mixpanel } from 'mixpanel-react-native';
-
+import NaraIcon from '../../assets/naraLogo.svg';
 
 const LoginScreen2 = ({navigation}) => {
   const [inputs, setInputs] = useState({
@@ -28,7 +28,7 @@ const LoginScreen2 = ({navigation}) => {
     },
   });
 
-  const {login, loading} = useContext(AuthContextNew);
+  const {login} = useContext(AuthContextNew);
 
 
   function inputChangedHandler(inputIdentifier, enteredValue) {
@@ -41,30 +41,6 @@ const LoginScreen2 = ({navigation}) => {
   }
 
   const colorScheme = useColorScheme();
-
-  const trackAutomaticEvents = true;
-  const mixpanel = new Mixpanel("2100a249cd1d52d225d1c040909d6c79", trackAutomaticEvents);
-  mixpanel.init();
-
-  async function checkSubscriptionStatus() {
-    try {
-      const customerInfo = await Purchases?.getCustomerInfo();
-      const activeSubscription = customerInfo?.entitlements?.active;
-
-      if (Object.keys(activeSubscription).length === 0) {
-        // when user have no active subscription plan
-        console.warn("no active plan");
-        navigation.navigate("PaywallScreenM");
-      } else {
-        // when user have subscribed any plan
-        console.warn("have active plan");
-        submitLoginData();
-      }
-    } catch (e) {
-      // error in fetching purchaser info
-      console.log("Error fetching purchaser info", e);
-    }
-  }
 
   function submitLoginData() {
     const dataToVerify = {
@@ -92,9 +68,6 @@ const LoginScreen2 = ({navigation}) => {
     }
 
     login(inputs.email.value, inputs.password.value);
-    console.log("Paywall Screen Navigated");
-    navigation.navigate("PaywallScreenM");
-    mixpanel.track("Login", {"Login": "Login"});
   }
 
   return (
@@ -145,18 +118,9 @@ const LoginScreen2 = ({navigation}) => {
         )}
 </View>
       <View style={{flexDirection: 'row', justifyContent: "space-around", marginTop: 30}}>
-        <CustomButton label={'Login'} onPress={() => {
-          //checkSubscriptionStatus();
-          submitLoginData();}}/>
+        <CustomButton label={'Login'} onPress={() => {submitLoginData();}}/>
         <RCustomButton label={'Sign Up'} onPress={() => navigation.navigate('RegisterScreen')}/>
       </View>
-      <ProgressLoader
-          visible={loading}
-          isModal={true}
-          isHUD={true}
-          hudColor={"#18163A"}
-          color={"#FFF5EF"}
-        />
      </View>
     </SafeAreaView>
   );
