@@ -13,26 +13,26 @@ const NarrativesOptionsTab = ({ Deduction, Edit, Create, Duplicate, Delete }) =>
             
       <TouchableOpacity onPress={Deduction}>
         <View style={styles.button}>
-          <Ionicons size={24} name="document-text-outline" color='#18163A'></Ionicons>
+          <Ionicons size={24} name="document-text-outline" color='#000000'></Ionicons>
           <Text style={styles.text}>Narration</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={Edit}>
         <View style={styles.button}>
-          <Ionicons size={24} name="create-outline" color='#18163A'></Ionicons>
+          <Ionicons size={24} name="create-outline" color='#000000'></Ionicons>
           <Text style={styles.text}>Change Story</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={Create}>
         <View style={styles.button}>
-          <Ionicons size={24} name="pencil-outline" color='#18163A'></Ionicons>
+          <Ionicons size={24} name="pencil-outline" color='#000000'></Ionicons>
           <Text style={styles.text}>Write Notes</Text>
         </View>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={Delete}>
         <View style={styles.button}>
-          <Ionicons size={24} name="trash-outline" color='#18163A'></Ionicons>
+          <Ionicons size={24} name="trash-outline" color='#000000'></Ionicons>
           <Text style={styles.text}>Delete Story</Text>
         </View>
       </TouchableOpacity>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     fontFamily: 'WorkSans-Light', 
     fontWeight: '300',
     letterSpacing: 3,
-    color: '#18163A'
+    color: '#000000'
   },
 });
 

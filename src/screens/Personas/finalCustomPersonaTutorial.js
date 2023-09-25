@@ -35,24 +35,21 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('FinalCustomPersona');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#9cc8C6',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -60,11 +57,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -73,11 +70,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
             The character description is meant to be a representation of a person's personality & values. It doesn't define who they are as a person.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -86,11 +83,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
             It's designed to look at what motivates them and how they typically express themselves.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -101,11 +98,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
         
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -114,19 +111,15 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
             Once you're done reading the description, scroll down and select "Done" and the character description will be stored on the main character page for you to access whenever you need.
         </Text>
 
-        <View style={{backgroundColor: '#9cc8C6',
+        <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -134,11 +127,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -159,19 +152,15 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
             />
 </View> 
         
-<View style={{backgroundColor: '#9cc8C6',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -179,11 +168,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -192,11 +181,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
            You are not limited to creating just one description per character.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -205,11 +194,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
            If you weren't sure how to answer certain questions, you can create multiple versions of the same character.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -218,11 +207,11 @@ const FinalCustomPersonaTutorial = ({navigation}) => {
 Or maybe you're curious to see what might happen if the person you're describing was a completely different person, to see how that might change the narration of the story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -231,11 +220,11 @@ Or maybe you're curious to see what might happen if the person you're describing
 Whatever it is, you have the freedom to create as many character descriptions as you need.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',

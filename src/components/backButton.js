@@ -10,8 +10,10 @@ const BackButton = ({onPress, icon}) => {
         borderRadius: 50,
         width: 36,
         height: 36,
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
-      <View style={{alignItems: 'center', marginTop: 5}}>{icon}</View>
+      <View style={{}}>{icon}</View>
     </TouchableOpacity>
   );
 };

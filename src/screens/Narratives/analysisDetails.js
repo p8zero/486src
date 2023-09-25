@@ -4812,23 +4812,49 @@ export default function AnalysisDetails({ route, navigation }) {
             navigation.pop();
           }}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
 
       </View>
 
       <ScrollView style={{ marginTop: "4%" }}>
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '5%'}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '5%',
+          marginHorizontal:'2.5%'
+        }}>
+      <View style={{
+
+      flexdirection: 'row',
+      justifyContent: 'center',
+      width: '50%',
+      height: 60,
+      borderTopRightRadius: 50,
+      borderBottomRightRadius: 50,}}>
+        <Text
+          style={{
+            fontFamily: 'WorkSans-Light',
+            fontSize: 22,
+            fontWeight: '300',
+            letterSpacing: 0,
+            color: '#000000',
+          }}>
+         The narration plot points
+        </Text>
+      </View>
+      <View style={{}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('AnalysisDetailsTutorial')
             }}
             style={{
-              backgroundColor: '#EDBDBA',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
-              width: 175,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
+              width: 150,
               height: 50,
               alignItems: 'center',
               justifyContent: 'center'
@@ -4837,15 +4863,16 @@ export default function AnalysisDetails({ route, navigation }) {
               style={{
                 textAlign: 'center',
                 paddingHorizontal: 20,
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 0,
-                color: '#18163A',
+                color: '#FFF5EF',
                 fontFamily: 'WorkSans-Regular',
               }}>
-              How to Use the Story Plot Points
+              More info on Plot Points
             </Text>
           </TouchableOpacity>
+      </View>
       </View>
         <View>
           <FlatList
@@ -4973,7 +5000,7 @@ export default function AnalysisDetails({ route, navigation }) {
             navigation.pop();
           }}
           style={{
-            backgroundColor: "#18163A",
+            backgroundColor: "#000000",
             width: 150,
             height: 50,
             justifyContent: "center",
@@ -5040,7 +5067,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
     letterSpacing: 2,
   },
@@ -5051,7 +5078,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
     letterSpacing: 2,
   },
@@ -5107,7 +5134,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
   },
   textComponentsSelected: {
@@ -5117,7 +5144,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
   },
   continueButton: {
@@ -5139,6 +5166,6 @@ const styles = StyleSheet.create({
     fontWeight: "300",
     letterSpacing: 4,
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
   },
 });

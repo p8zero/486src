@@ -50,14 +50,18 @@ const styles = StyleSheet.create({
   main_container: {
     backgroundColor: '#FFF5EF',
     flex: 1,
-    borderTopRightRadius: 40,
-    borderTopLeftRadius: 40,
   },
 
   top_buttons_container: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: '7%',
+    alignItems:'center',
+    marginTop: '2%',
+    backgroundColor: '#18163A',
+    height: 30,
+    borderTopLeftRadius: 20,
+    borderBottomRightRadius: 20
+
   },
 
   overview_container: {
@@ -75,15 +79,15 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '300',
     letterSpacing: 4,
-    color:'#18163A'
+    color:'#FFF5EF'
   },
 
   textSelected: {
     fontFamily: 'WorkSans-Light',
     fontSize: 18,
-    fontWeight: '300',
+    fontWeight: '400',
     letterSpacing: 4,
-    color: '#18163A'
+    color: '#FFF5EF'
   },
 });
 

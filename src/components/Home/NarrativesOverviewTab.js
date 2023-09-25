@@ -4563,11 +4563,10 @@ const NarrativesOverviewTab = ({data, mainChar, otherChar, flow}) => {
           <Text style={{
           flex:1,
           fontFamily: 'WorkSans-Light', 
-          fontSize: 17, 
-          color:'#18163A',
+          fontSize: 18, 
+          color:'#000000',
           fontWeight: '300', 
           letterSpacing: 1, 
-          marginTop: '5%',
           marginHorizontal: '5%'}}>
            {data}
           </Text>

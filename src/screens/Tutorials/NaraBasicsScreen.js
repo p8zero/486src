@@ -20,38 +20,34 @@ const NaraBasicsScreen = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.navigate('TutorialsScreen');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
 
       </View>
 
       <ScrollView style={{top: '15%',}}>
         
-      <View style={{backgroundColor: '#18163A',
+      <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
           width: '80%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#FFF5EF',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
-            marginLeft: '5%',
+            marginLeft: '3%',
         }}>What's Behind nara?
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '5%',
@@ -60,11 +56,11 @@ const NaraBasicsScreen = ({navigation}) => {
             nara is able to create narrations through a purpose-built AI.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '5%',
@@ -72,11 +68,11 @@ const NaraBasicsScreen = ({navigation}) => {
             The AI is based on a number of social & personality psychology frameworks and was designed to see the connections between a person's personality, the situation they are in and their resulting behavior.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '5%',
@@ -84,11 +80,11 @@ const NaraBasicsScreen = ({navigation}) => {
             The AI takes in a persona's personality along with circumstances of their situation and outputs the most likely behaviors (i.e. foreshadowing).
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -97,27 +93,24 @@ const NaraBasicsScreen = ({navigation}) => {
         </Text>
 
         
-        <View style={{backgroundColor: '#18163A',
+        <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
           width: '80%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#FFF5EF',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
-            marginLeft: '5%'
+            marginLeft: '3%'
         }}>What nara Doesn't Show
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -130,11 +123,11 @@ const NaraBasicsScreen = ({navigation}) => {
             Timing
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '5%',
@@ -143,7 +136,7 @@ const NaraBasicsScreen = ({navigation}) => {
             nara does not provide a sense of timing to the narration. There is no defined sequence of events or an indication of when each story element might take place.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -156,11 +149,11 @@ const NaraBasicsScreen = ({navigation}) => {
             Degree
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '40%',

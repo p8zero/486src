@@ -35,24 +35,20 @@ const AnalysisDetailsTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('AnalysisDetails');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -61,11 +57,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -74,11 +70,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             Narrations are comprised of a list of plot points similar to the story plot points.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -87,11 +83,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             They represent behaviors and feelings that take place in relationships. They are meant to be broad and general as they help to capture the essence of the story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -100,11 +96,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             Each plot point within the story and narration contains a list of what that specific behavior or feeling could look like. More on how to access that below.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -114,19 +110,15 @@ const AnalysisDetailsTutorial = ({navigation}) => {
         </Text>
     
       
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -135,11 +127,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -148,11 +140,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
            Reading the narration plot points is the same as reading the story plot points.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -161,11 +153,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
            Remember, the narration plot points are from the narrator's point of view.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -174,11 +166,11 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             If you select a plot point, scroll down and click "View", you'll go to a page that gives examples on what that plot point can look like.
         </Text>
                 <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',

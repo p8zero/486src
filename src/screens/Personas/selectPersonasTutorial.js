@@ -35,24 +35,21 @@ const SelectPersonasTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('SelectPersonas');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#9cc8C6',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '80%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -61,11 +58,11 @@ const SelectPersonasTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '00%',
@@ -74,11 +71,11 @@ const SelectPersonasTutorial = ({navigation}) => {
             So on this page, you have three ways to desribe a character.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '00%',
@@ -87,11 +84,11 @@ const SelectPersonasTutorial = ({navigation}) => {
             1. Create a character description from the ground up
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -100,11 +97,11 @@ const SelectPersonasTutorial = ({navigation}) => {
             2. Choose a character type and just go with it as is
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '10%',
@@ -113,19 +110,16 @@ const SelectPersonasTutorial = ({navigation}) => {
             3. Choose a character type and change it to your liking
         </Text>
 
-    <View style={{backgroundColor: '#9cc8C6',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -134,24 +128,24 @@ const SelectPersonasTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
-            marginTop: '3%'
+            marginTop: '5%'
         }}>
             Select the button at the bottom of the previous page and you can start answering question to build your character description.
         </Text> 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -172,19 +166,15 @@ const SelectPersonasTutorial = ({navigation}) => {
             />
 </View> 
    
-<View style={{backgroundColor: '#9cc8C6',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -192,11 +182,11 @@ const SelectPersonasTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -205,11 +195,11 @@ const SelectPersonasTutorial = ({navigation}) => {
            A character type is what you think it is. It's a type of character that comes up more often than others. It's how you might refer to someone as "that kind of person".
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -218,11 +208,11 @@ const SelectPersonasTutorial = ({navigation}) => {
             They can be a complete character description on their own or they can provide a great starting point. It's up to you.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '3%',
@@ -231,19 +221,15 @@ const SelectPersonasTutorial = ({navigation}) => {
           If you see one that resonates with you, click on it and a new page will pop up with a character summary. At the bottom of the page, choose "Select" and you'll go straight to the summary page.
         </Text>
         
-<View style={{backgroundColor: '#9cc8C6',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -251,11 +237,11 @@ const SelectPersonasTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -264,11 +250,11 @@ const SelectPersonasTutorial = ({navigation}) => {
           Select the character type you want and at the bottom choose "Change". You'll go to the character questions page and all the questions will have existing answers.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',

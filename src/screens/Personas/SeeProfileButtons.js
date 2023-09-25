@@ -139,9 +139,9 @@ const SeeProfileButtons = ({ route, navigation }) => {
             style={{
               fontFamily: "WorkSans-Light",
               color: "#18163A",
-              fontSize: 20,
+              fontSize: 18,
               fontWeight: "300",
-              letterSpacing: 4,
+              letterSpacing: 2,
               paddingTop: 10,
             }}
           >

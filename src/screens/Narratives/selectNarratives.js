@@ -694,16 +694,17 @@ const handleOnPress4 = (item) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('Perspective2');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
         <BackButton
           label={'back button'}
           onPress={() => {navigation.navigate('HomeScreen')}}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
           />
       </View>
       <View style={{top: '5%', 
-      marginRight: '15%', backgroundColor: '#FFF5EF',
+      marginRight: '15%', 
+      marginBottom: '8%',
       flexdirection: 'row',
       justifyContent: 'center',
       width: '62%',
@@ -713,10 +714,10 @@ const handleOnPress4 = (item) => {
         <Text
           style={{
             fontFamily: 'WorkSans-Light',
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: '300',
             letterSpacing: 0,
-            color: '#18163A',
+            color: '#000000',
             marginLeft: '5%',
             marginRight: '5%'
           }}>
@@ -724,48 +725,20 @@ const handleOnPress4 = (item) => {
         </Text>
       </View>
 
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '-5%'}}>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('SelectNarrativesTutorial')
-            }}
-            style={{
-              backgroundColor: '#EDBDBA',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
-              width: 150,
-              height: 50,
-              marginTop: '10%',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-            <Text
-              style={{
-                textAlign: 'center',
-                paddingHorizontal: 20,
-                fontWeight: '300',
-                fontSize: 16,
-                letterSpacing: 0,
-                color: '#18163A',
-                fontFamily: 'WorkSans-Regular',
-              }}>
-              How to Build a Story
-            </Text>
-          </TouchableOpacity>
-      </View>
+      
 
       <SafeAreaView style={{marginTop: '0%'}}>
       <Text
           style={{
             fontFamily: 'WorkSans-Light',
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: '400',
             letterSpacing: 1,
-            color: '#18163A',
+            color: '#000000',
             marginLeft: '4%',
             marginRight: '5%',
             marginBottom: '2%',
-            marginTop: '4%'
+            marginTop: '6%'
           }}>
           Story Themes
         </Text>
@@ -854,10 +827,43 @@ const handleOnPress4 = (item) => {
             );
         }}
         />
+              <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '5%',
+        }}>
       
-
+<View style={{}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('SelectNarrativesTutorial')
+            }}
+            style={{
+              backgroundColor: '#18163A',
+              borderTopRightRadius: 50,
+              borderBottomRightRadius: 50,
+              width: 160,
+              height: 60,
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+            <Text
+              style={{
+                textAlign: 'left',
+                paddingHorizontal: 10,
+                fontWeight: '400',
+                fontSize: 16,
+                color: '#fff5ef',
+                fontFamily: 'WorkSans-Regular',
+              }}>
+              More info on how to write a story
+            </Text>
+          </TouchableOpacity>
+      </View>
         
-        <View style={{marginTop: '0%'}}>
+        <View style={{}}>
 
         <TouchableOpacity
        onPress={() => {
@@ -874,22 +880,23 @@ const handleOnPress4 = (item) => {
           trait: trait
         });
       }}
-        style={{alignItems: 'flex-end'}}>
+        style={{alignItems:'flex-end'}}>
           <View style={{
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#EDBDBA',
-            width: SCREEN_WIDTH*.8,
-            height: 65,
-             borderTopLeftRadius: 50,
-             borderBottomLeftRadius: 50,
-             paddingHorizontal: '5%'}}>
+            width: 200,
+            height: 60,
+            borderTopLeftRadius: 50,
+            borderBottomLeftRadius: 50,
+             paddingHorizontal: 20}}>
             <Text style={styles.textNewNarr}>
-              Build {mainChar}'s story with {otherChar} from the ground up
+              Click here to write the story from scratch
             </Text>
           </View>
         </TouchableOpacity>
 
+        </View>
         </View>
 
       <RBSheet
@@ -912,7 +919,7 @@ const handleOnPress4 = (item) => {
             alignItems: 'center',
           },
           draggableIcon: {
-            backgroundColor: '#18163A',
+            backgroundColor: '#000000',
           },
         }}>
           <ScrollView>
@@ -951,7 +958,7 @@ const handleOnPress4 = (item) => {
                     fontWeight: "300",
                     fontSize: 20,
                     letterSpacing: 2,
-                    color: "#18163A",
+                    color: "#000000",
                     fontFamily: "WorkSans-Thin",
                   }}
                 >
@@ -1011,7 +1018,7 @@ const handleOnPress4 = (item) => {
       marginLeft: 15,
       marginBottom: 30,
       width: 190,
-      height: 250,
+      height: 240,
       borderRadius: 30,
 
     },
@@ -1026,7 +1033,7 @@ const handleOnPress4 = (item) => {
       marginLeft: 15,
       marginBottom: 30,
       width: 190,
-      height: 250,
+      height: 240,
       borderRadius: 30,
     },
 
@@ -1037,7 +1044,7 @@ const handleOnPress4 = (item) => {
       marginHorizontal: '2.5%',
       fontWeight: '300',
       fontSize: 18,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1
     },
@@ -1048,7 +1055,7 @@ const handleOnPress4 = (item) => {
       marginHorizontal: '2.5%',
       fontWeight: '300',
       fontSize: 18,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1
     },
@@ -1058,7 +1065,7 @@ const handleOnPress4 = (item) => {
       paddingTop: 5,
       fontWeight: '300',
       fontSize: 16,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1,
       textDecorationLine: 'underline',
@@ -1070,7 +1077,7 @@ const handleOnPress4 = (item) => {
       paddingTop: 5,
       fontWeight: '300',
       fontSize: 16,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1,
     },
@@ -1080,7 +1087,7 @@ const handleOnPress4 = (item) => {
       paddingHorizontal: 20,
       fontWeight: '300',
       fontSize: 20,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1,
     },
@@ -1090,7 +1097,7 @@ const handleOnPress4 = (item) => {
       marginBottom: '3%',
       fontWeight: '300',
       fontSize: 18,
-      color: '#18163A',
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 1,
     },
@@ -1131,10 +1138,9 @@ const handleOnPress4 = (item) => {
     },
     textNewNarr: {
       textAlign: 'left',
-      marginHorizontal: '2%',
       fontWeight: '300',
-      fontSize: 18,
-      color: '#18163A',
+      fontSize: 16,
+      color: '#000000',
       fontFamily: 'WorkSans-Thin',
       letterSpacing: 0
     },

@@ -2924,7 +2924,7 @@ export default function SelectPersonas({ route, navigation }) {
         if (j >= ranges[idxRange]) {
             idxRange++;
             if (!anyVal) {
-                data[persNames[i]] += "Not Sure How to Answer This";
+                data[persNames[i]] += "Nothing pre-selected, click 'Change' below to answer the questions";
                }
                anyVal = false;
             data[persNames[i]] = data[persNames[i]].concat("\n\n");
@@ -2962,7 +2962,7 @@ export default function SelectPersonas({ route, navigation }) {
 
     //Method 2 by checking the count to see if there were any "Y" or "N" values so far
       if (!anyVal) {
-        data[persNames[i]] += "Not Sure How to Answer This";
+        data[persNames[i]] += "Nothing pre-selected, click 'Change' below to answer the questions";
       }
     //_____________
       numData.push(innerData)
@@ -3056,7 +3056,7 @@ export default function SelectPersonas({ route, navigation }) {
             navigation.goBack("SeeProfileButtons");
           }}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
         <BackButtonPersona
@@ -3064,69 +3064,37 @@ export default function SelectPersonas({ route, navigation }) {
           onPress={() => {
             navigation.navigate("PersonasScreen");
           }}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
         />
       </View>
-      <View style={{ top: "6%", marginRight: '13%',  backgroundColor: '#FFF5EF',
+      <View style={{ top: "6%", 
         flexdirection: 'row',
         justifyContent: 'center',
         width: '60%',
-        height: 55,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50, }}>
+        marginLeft: '5%'}}>
         <Text
           style={{
             fontFamily: "WorkSans-Light",
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: "300",
             letterSpacing: 0,
-            color: "#18163A",
-            marginLeft: '5%', 
-            marginRight: '5%'
+            color: "#000000",
           }}
         >
           What's {newPers} like as a person?
         </Text>
       </View>
 
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '-3%'}}>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('SelectPersonasTutorial')
-            }}
-            style={{
-              backgroundColor: '#F6DEDC',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
-              width: 160,
-              height: 50,
-              marginTop: '10%',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-            <Text
-              style={{
-                textAlign: 'center',
-                paddingHorizontal: 20,
-                fontWeight: '300',
-                fontSize: 16,
-                letterSpacing: 0,
-                color: '#18163A',
-                fontFamily: 'WorkSans-Regular',
-              }}>
-              How to Describe a Character
-            </Text>
-          </TouchableOpacity>
-      </View>
+      
 
-      <View style={{ }}>
+      <View style={{marginTop: '15%' }}>
       <Text
           style={{
             fontFamily: 'WorkSans-Light',
             fontSize: 20,
             fontWeight: '400',
             letterSpacing: 1,
-            color: '#18163A',
+            color: '#000000',
             marginLeft: '5%',
             marginRight: '5%',
             marginBottom: '2%',
@@ -3172,9 +3140,44 @@ export default function SelectPersonas({ route, navigation }) {
             );
           }}
         />
+        <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+            marginTop: '5%'
+        }}
+      >
 
-
-        <View style={{ marginTop: "2%", alignItems: 'flex-end' }}>
+<View style={{}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('SelectPersonasTutorial')
+            }}
+            style={{
+              backgroundColor: '#18163A',
+              borderTopRightRadius: 50,
+              borderBottomRightRadius: 50,
+              width: 165,
+              height: 60,
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+            <Text
+              style={{
+                textAlign: 'left',
+                paddingHorizontal: 5,
+                fontWeight: '400',
+                fontSize: 16,
+                letterSpacing: 0,
+                color: '#fff5ef',
+                fontFamily: 'WorkSans-Regular',
+              }}>
+              More info on character creation
+            </Text>
+          </TouchableOpacity>
+      </View>
+        <View style={{}}>
           <TouchableOpacity
             onPress={() => {
                 handleBuildPersona();
@@ -3185,8 +3188,8 @@ export default function SelectPersonas({ route, navigation }) {
               justifyContent: "center",
               backgroundColor: "#F6DEDC",
               marginBottom: 0,
-              width: SCREEN_WIDTH * 0.8,
-              height: 65,
+              width: 200,
+              height: 60,
               borderTopLeftRadius: 50,
               borderBottomLeftRadius: 50,
               paddingHorizontal: '5%'
@@ -3194,10 +3197,11 @@ export default function SelectPersonas({ route, navigation }) {
           >
             <View style={{}}>
               <Text style={styles.textNewNarr}>
-                Build a description of {newPers} from the ground up
+                Click here to create the character from scratch
               </Text>
             </View>
           </TouchableOpacity>
+        </View>
         </View>
         <RBSheet
           ref={refRBSheet}
@@ -3248,7 +3252,7 @@ export default function SelectPersonas({ route, navigation }) {
                   style={{
                     fontWeight: "300",
                     fontSize: 18,
-                    color: "#18163A",
+                    color: "#000000",
                     fontFamily: "Worksans-light",
                     letterSpacing: 2,
                   }}
@@ -3266,7 +3270,7 @@ export default function SelectPersonas({ route, navigation }) {
                   style={{
                     fontWeight: "300",
                     fontSize: 18,
-                    color: "#18163A",
+                    color: "#000000",
                     fontFamily: "Worksans-light",
                     letterSpacing: 2,
                   }}
@@ -3295,7 +3299,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginBottom: 30,
     width: 180,
-    height: 260,
+    height: 220,
     borderRadius: 30,
   },
   textButtonSelected: {
@@ -3305,7 +3309,7 @@ const styles = StyleSheet.create({
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Thin",
     letterSpacing: 1,
   },
@@ -3320,7 +3324,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginBottom: 30,
     width: 180,
-    height: 260,
+    height: 220,
     borderRadius: 30,
   },
   textButton: {
@@ -3330,7 +3334,7 @@ const styles = StyleSheet.create({
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Thin",
     letterSpacing: 1,
   },
@@ -3359,7 +3363,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Thin",
     letterSpacing: 2,
   },
@@ -3369,7 +3373,7 @@ const styles = StyleSheet.create({
     marginHorizontal: "6%",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Thin",
     letterSpacing: 0,
   },
@@ -3408,10 +3412,9 @@ const styles = StyleSheet.create({
   },
   textNewNarr: {
     textAlign: "left",
-    marginHorizontal: "5%",
     fontWeight: "300",
-    fontSize: 18,
-    color: "#18163A",
+    fontSize: 16,
+    color: "#000000",
     fontFamily: "WorkSans-Thin",
     letterSpacing: 0,
   },

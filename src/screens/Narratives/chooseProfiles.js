@@ -99,6 +99,7 @@ export default function NextScreen({ navigation }) {
     const userAges = selectedPersonas.map((item) => item.data.age);
     const userTraits = selectedPersonas.map((item) => item.data.traits);
 
+    
     // Navigate to Perspective screen with user data
     navigation.navigate('Perspective', {
       people: selectedPersonas,
@@ -125,65 +126,39 @@ export default function NextScreen({ navigation }) {
         <BackButton
           label={'back button'}
           onPress={() => { navigation.navigate('NarrativesScreen'); }}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
         <BackButton
           label={'back button'}
           onPress={() => { navigation.navigate('HomeScreen'); }}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
         />
       </View>
-      <View
-        style={{marginTop: '15%', marginRight: '20%', 
-        marginBottom: '5%',          
-        backgroundColor: '#FFF5EF',
-        flexdirection: 'row',
-        justifyContent: 'center',
-        width: '60%',
-        height: 50,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
-        <Text
-          style={{
-            fontFamily: 'WorkSans-Light',
-            marginLeft: '5%',
-            fontSize: 20,
-            fontWeight: '300',
-            letterSpacing: 0,
-            color: '#18163A'
-          }}>
-          Who's in the story?
-        </Text>
-      </View>
-
-      <View style={{ alignItems: 'flex-end', justifyContent: 'center', marginTop: '-5%', marginBottom: '2%' }}>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('ChooseProfilesTutorial');
-          }}
-          style={{
-            backgroundColor: '#EDBDBA',
-            borderTopLeftRadius: 50,
-            borderBottomLeftRadius: 50,
-            width: 150,
-            height: 50,
-            alignItems: 'center',
+      <View style={{
+          flexdirection: 'row',
+          justifyContent: 'center',
+          marginTop: '15%',
+          marginBottom: '3%',
+          width: '70%',
+          marginHorizontal: '2.5%',
+          height: 60,
+          borderTopRightRadius: 50,
+          borderBottomRightRadius: 50,
+      }}>
+      <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#000000', 
+            textAlign: 'left',
             justifyContent: 'center',
-          }}>
-          <Text
-            style={{
-              textAlign: 'center',
-              paddingHorizontal: 20,
-              fontWeight: '300',
-              fontSize: 16,
-              letterSpacing: 1,
-              color: '#18163A',
-              fontFamily: 'WorkSans-Regular',
-            }}>
-            Creating Characters
-          </Text>
-        </TouchableOpacity>
-      </View>
+            fontWeight: '300', 
+            fontSize: 22,
+            marginLeft: "5%",
+            marginRight: '5%',
+            letterSpacing: 0,
+            flexWrap: 'wrap',}}>
+              Who are the characters in the story?
+        </Text>
+      </View> 
+
 
       <InputField
       label="search by character"
@@ -222,7 +197,7 @@ export default function NextScreen({ navigation }) {
               fontWeight: '300',
               fontSize: 20,
               letterSpacing: 3,
-              color: '#18163A',
+              color: '#000000',
               fontFamily: 'WorkSans-Regular',
             }}>
             Next
@@ -267,7 +242,7 @@ const styles = StyleSheet.create({
     textAlign:'left',
     marginLeft: '10%',
     letterSpacing: 2,
-    color: '#18163A',
+    color: '#000000',
   },
   textSelected: {
     flexDirection: 'row',
@@ -277,7 +252,7 @@ const styles = StyleSheet.create({
     textAlign:'left',
     marginLeft: '10%',
     letterSpacing: 2,
-    color: '#18163A',
+    color: '#000000',
   },
   text2: {
     flexDirection: 'row',
@@ -287,7 +262,7 @@ const styles = StyleSheet.create({
     textAlign:'left',
     marginLeft: '5%',
     letterSpacing: 0,
-    color: '#18163A',
+    color: '#000000',
   },
   textSelected2: {
     flexDirection: 'row',
@@ -297,6 +272,6 @@ const styles = StyleSheet.create({
     textAlign:'left',
     marginLeft: '5%',
     letterSpacing: 0,
-    color: '#18163A',
+    color: '#000000',
   },
 });

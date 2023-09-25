@@ -40,7 +40,7 @@ const Item = ({name, age, gender, onPress}) => (
         textAlign:'left',
         marginLeft: '10%',
         letterSpacing: 2,
-        color: '#18163A',
+        color: '#000000',
       }}>
 
       {name}
@@ -56,7 +56,7 @@ const Item = ({name, age, gender, onPress}) => (
         textAlign:'left',
         marginLeft: '5%',
         letterSpacing: 0,
-        color: '#18163A',
+        color: '#000000',
       }}>
 
       {age}
@@ -70,7 +70,7 @@ const Item = ({name, age, gender, onPress}) => (
         textAlign:'left',
         marginLeft: '5%',
         letterSpacing: 0,
-        color: '#18163A',
+        color: '#000000',
       }}>
 
       {gender}

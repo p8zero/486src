@@ -28,13 +28,13 @@ const Item = ({mainChar, otherChar, relationship, onPress, title, flow}) => (
       borderRadius: 30,
       marginBottom: '5%',
       width: '100%',
-      height: 250,
+      height: 220,
     }}>
       <View style={{}}>
         <Text
       style={{
         fontWeight: '300',
-        color: '#18163A',
+        color: '#000000',
         fontSize: 20,
         fontFamily: 'WorkSans-Light',
         textAlign:'left',
@@ -48,7 +48,7 @@ const Item = ({mainChar, otherChar, relationship, onPress, title, flow}) => (
       style={{
         fontWeight: '300',
         fontSize: 16,
-        color: '#18163A',
+        color: '#000000',
         fontFamily: 'WorkSans-Light',
         textAlign:'left',
         marginTop: '2%',
@@ -61,8 +61,8 @@ const Item = ({mainChar, otherChar, relationship, onPress, title, flow}) => (
     <Text
       style={{
         fontWeight: '300',
-        fontSize: 18,
-        color: '#18163A',
+        fontSize: 20,
+        color: '#000000',
         fontStyle: 'italic',
         fontFamily: 'WorkSans-Light',
         textAlign:'left',

@@ -162,6 +162,7 @@ export default function FinalNarratives({ route, navigation }) {
           marginHorizontal: "2.5%",
           padding: "0%",
           width: "95%",
+          marginBottom: '15%'
         }}
       >
         <BackButton
@@ -170,7 +171,7 @@ export default function FinalNarratives({ route, navigation }) {
             navigation.goBack("SelectNarratives");
           }}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
         <BackButton
@@ -178,39 +179,44 @@ export default function FinalNarratives({ route, navigation }) {
           onPress={() => {
             navigation.navigate("HomeScreen");
           }}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
         />
       </View>
-      <View style={{top: '8%', 
-      marginRight: '15%', backgroundColor: '#FFF5EF',
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginHorizontal: "2.5%",
+          width: "95%",
+        }}
+      >
+      <View style={{ 
       flexdirection: 'row',
       justifyContent: 'center',
-      width: '55%',
+      width: '50%',
       height: 55,
       borderTopRightRadius: 50,
       borderBottomRightRadius: 50,}}>
         <Text
           style={{
             fontFamily: 'WorkSans-Light',
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: '300',
             letterSpacing: 0,
-            color: '#18163A',
-            marginLeft: '5%',
-            marginRight: '5%'
+            color: '#000000',
+
           }}>
  Story Summary
         </Text>
       </View>
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '7%'}}>
+      <View style={{}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('FinalNarrativeTutorial')
             }}
             style={{
-              backgroundColor: '#EDBDBA',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
               width: 150,
               height: 50,
               alignItems: 'center',
@@ -220,15 +226,16 @@ export default function FinalNarratives({ route, navigation }) {
               style={{
                 textAlign: 'center',
                 paddingHorizontal: 20,
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 0,
-                color: '#18163A',
+                color: '#FFf5ef',
                 fontFamily: 'WorkSans-Regular',
               }}>
-              How to Use the Summary
+              More info on the summary
             </Text>
           </TouchableOpacity>
+      </View>
       </View>
       
       <View
@@ -250,8 +257,7 @@ export default function FinalNarratives({ route, navigation }) {
             
         <ScrollView
           style={{
-            paddingBottom: "5%",
-            paddingTop: "10%",
+            paddingTop: 30,
             marginTop: '2%',
             marginBottom: '60%'
           }}
@@ -283,7 +289,7 @@ export default function FinalNarratives({ route, navigation }) {
           visible={loading}
           isModal={true}
           isHUD={true}
-          hudColor={"#18163A"}
+          hudColor={"#000000"}
           color={"#FFF5ef"}
         />
       </View>
@@ -329,7 +335,7 @@ const styles = StyleSheet.create({
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 20,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 2,
     fontFamily: "WorkSans-Regular",
   },
@@ -341,7 +347,7 @@ const styles = StyleSheet.create({
     marginTop: "0%",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 0,
     fontFamily: "WorkSans-Regular",
   },
@@ -373,7 +379,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 4,
     fontFamily: "WorkSans-Regular",
   },
@@ -382,7 +388,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 4,
     fontFamily: "WorkSans-Regular",
   },

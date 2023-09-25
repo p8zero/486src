@@ -109,45 +109,50 @@ export default function Perspective({route, navigation}) {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.navigate('ChooseProfiles');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
         <BackButton
           label={'back button'}
           onPress={() => {navigation.navigate('HomeScreen')}}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
           />
       </View>
       <View
-        style={{marginBottom: '0%', marginTop: '8%', backgroundColor: '#FFF5EF',
-        flexdirection: 'row',
-        justifyContent: 'center',
-        width: '55%',
-        height: 50,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
-        <Text
-          style={{
-            fontFamily: 'WorkSans-Regular',
-            fontSize: 20,
-            fontWeight: '300',
-            marginLeft: '5%',
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '10%',
+          marginHorizontal:'2.5%',
+          width: '95%',
+        }}> 
+      <View style={{
+          width: '50%',
+          height: 55,
+          borderTopRightRadius: 50,
+          borderBottomRightRadius: 50,
+      }}>
+      <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#000000', 
+            textAlign: 'left',
+            justifyContent: 'center',
+            fontWeight: '300', 
+            fontSize: 22,
+            marginLeft: "5%",
             marginRight: '5%',
-            color: '#18163A',
             letterSpacing: 0,
-          }}>
-          Who's the narrator?
+            flexWrap: 'wrap',}}>
+              Who's the narrator?
         </Text>
-
-        </View>
-        <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '-5%'}}>
+      </View> 
+        <View style={{justifyContent: 'center',}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('PerspectiveTutorial')
             }}
             style={{
-              backgroundColor: '#EDBDBA',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
               width: 150,
               height: 50,
               alignItems: 'center',
@@ -157,16 +162,17 @@ export default function Perspective({route, navigation}) {
               style={{
                 textAlign: 'center',
                 paddingHorizontal: 20,
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 1,
-                color: '#18163A',
+                color: '#FFF5EF',
                 fontFamily: 'WorkSans-Regular',
               }}>
-              Choosing a Narrator
+                More info on narrator
             </Text>
           </TouchableOpacity>
   
+      </View>
       </View>
 
         <ScrollView style={{}}>
@@ -229,7 +235,7 @@ export default function Perspective({route, navigation}) {
                 fontWeight: '300',
                 fontSize: 20,
                 letterSpacing: 4,
-                color: '#18163A',
+                color: '#000000',
                 fontFamily: 'WorkSans-Regular',
               }}>
               Next
@@ -267,17 +273,17 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     fontWeight: '300',
     fontSize: 24,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Regular',
-    letterSpacing: 4
+    letterSpacing: 2
   },
   textSelected: {
     paddingTop: 0,
     fontWeight: '300',
     fontSize: 24,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Regular',
-    letterSpacing: 4,
+    letterSpacing: 2,
   },
   verticalStyle: {
     justifyContent: 'flex-start', 

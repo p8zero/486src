@@ -162,42 +162,48 @@ export default function FinalNarrativesNC({ route, navigation }) {
             navigation.goBack("SelectNarratives");
           }}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
 
       </View>
-      <View style={{top: '8%', 
-      marginRight: '15%', backgroundColor: '#F6DEDC',
-      flexdirection: 'row',
-      justifyContent: 'center',
-      width: '55%',
-      height: 50,
-      borderTopRightRadius: 50,
-      borderBottomRightRadius: 50,}}>
-        <Text
-          style={{
-            fontFamily: 'WorkSans-Light',
-            fontSize: 20,
-            fontWeight: '300',
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginTop: "15%",
+          marginHorizontal: "2.5%",
+          padding: "0%",
+          width: "95%",
+          marginBottom: '2%'
+        }}
+      >
+      <View style={{
+          flexdirection: 'row',
+          justifyContent: 'center',
+          width: '50%',
+          borderTopRightRadius: 50,
+          borderBottomRightRadius: 50,
+      }}>
+      <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#000000', 
+            textAlign: 'left',
+            justifyContent: 'center',
+            fontWeight: '300', 
+            fontSize: 22,
             letterSpacing: 0,
-            color: '#18163A',
-            marginLeft: '5%',
-            marginRight: '5%'
-          }}>
-Narration Summary
+            flexWrap: 'wrap',}}>
+              Narration Summary
         </Text>
-      </View>
-
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '7%'}}>
+      </View> 
+      <View style={{}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('AnalysisSummaryTutorial')
             }}
             style={{
-              backgroundColor: '#EDBDBA',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
               width: 150,
               height: 50,
               alignItems: 'center',
@@ -207,10 +213,10 @@ Narration Summary
               style={{
                 textAlign: 'center',
                 paddingHorizontal: 20,
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 0,
-                color: '#18163A',
+                color: '#FFF5EF',
                 fontFamily: 'WorkSans-Regular',
               }}>
               How to Use the Summary
@@ -218,10 +224,12 @@ Narration Summary
           </TouchableOpacity>
       </View>
 
+</View>
+
       <View
         style={{
           flex: 1,
-          marginTop: "5%",
+          marginTop: "2%",
           backgroundColor: "#F6DEDC",
           borderTopRightRadius: 50,
           borderTopLeftRadius: 0,
@@ -271,7 +279,7 @@ Narration Summary
               
               style={styles.editButton}
             >
-              <Text style={styles.buttonText}>View</Text>
+              <Text style={styles.buttonText}>Details</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -323,7 +331,6 @@ const styles = StyleSheet.create({
     color: "#000000",
     fontFamily: "WorkSans-Regular",
     // fontFamily: 'AppleSDGothicNeo-Thin',
-    
   },
   titleStyle: {
     flexWrap: "wrap",
@@ -333,20 +340,19 @@ const styles = StyleSheet.create({
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 1,
     fontFamily: "WorkSans-Regular",
   },
   titleStyle2: {
     flexWrap: "wrap",
     textAlign: "left",
-    paddingTop: "8%",
-    paddingBottom: '2%',
+    paddingTop: "5%",
     marginHorizontal: "5%",
     fontWeight: "300",
     fontSize: 18,
     fontStyle: 'italic',
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 1,
     fontFamily: "WorkSans-Regular",
   },
@@ -358,10 +364,9 @@ const styles = StyleSheet.create({
     marginTop: "0%",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 0,
     fontFamily: "WorkSans-Regular",
-    // fontFamily: 'AppleSDGothicNeo-Medium',
   },
   continueButton: {
     alignItems: "center",
@@ -390,7 +395,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "300",
     fontSize: 18,
-    color: "#18163A",
+    color: "#000000",
     letterSpacing: 4,
     fontFamily: "WorkSans-Regular",
   },

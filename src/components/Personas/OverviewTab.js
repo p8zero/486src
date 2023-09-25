@@ -364,7 +364,7 @@ const dataToText = () => {
           <Text style={{
           flex:1,
           fontFamily: 'WorkSans-Light', 
-          fontSize: 17, 
+          fontSize: 18, 
           color:'#18163A',
           fontWeight: '300', 
           letterSpacing: 1, 
@@ -380,11 +380,11 @@ const dataToText = () => {
 
 const styles = StyleSheet.create({
   main_container: {
-    marginTop: '5%',
+    marginTop: '3%',
     backgroundColor: '#FFF5EF',
   },
   button: {
-    marginTop: 20,
+    marginTop: 10,
     width: "50%",
     marginLeft: 20,
     flexDirection: "row",

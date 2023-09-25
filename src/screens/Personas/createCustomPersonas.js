@@ -629,60 +629,61 @@ const {newPers2} = route.params;
       }}>
      <View
         style={{
-          flex: 1,
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          top: '8%',
+          top: '5%',
           marginHorizontal: '2.5%',
-          padding: '0%',
-          width: SCREEN_WIDTH*.95,
+          width: '95%'
         }}>
         <BackButtonPersona
           label={'back button'}
           onPress={() => {navigation.goBack('SelectPersonas');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
         <BackButtonPersona
           label={'back button'}
           onPress={() => {navigation.navigate('PersonasScreen')}}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
           />
     </View>
 
-      <View style={{top: '10%', marginRight: '5%', marginBottom: '0%', backgroundColor: '#FFF5EF',
+    <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '10%',
+          marginBottom: '5%',
+          marginHorizontal: '2.5%'
+        }}>
+
+      <View style={{
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '60%',
-        height: 60,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
+        width: '50%'}}>
         <Text
           style={{
             fontFamily: 'WorkSans-Light',
-            fontSize: 20,
-            color: '#18163A',
+            fontSize: 22,
+            color: '#000000',
             fontWeight: '300',
             letterSpacing: 0,
-            marginLeft: '5%',
-            marginRight: '5%'
           }}>
           What is {newPers} like as a person?
         </Text>
       </View>
 
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '3%'}}>
+      <View style={{}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('CreateCustomPersonasTutorial')
             }}
             style={{
-              backgroundColor: '#F6DEDC',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
               width: 150,
               height: 50,
-              marginTop: '10%',
               alignItems: 'center',
               justifyContent: 'center'
             }}>
@@ -690,16 +691,18 @@ const {newPers2} = route.params;
               style={{
                 textAlign: 'center',
                 paddingHorizontal: 20,
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 0,
-                color: '#18163A',
+                color: '#fff5ef',
                 fontFamily: 'WorkSans-Regular',
               }}>
-              Answering the Questions
+              More info on the questions
             </Text>
           </TouchableOpacity>
       </View>
+      </View>
+
 
       <View style={styles.container}>
         <View style={styles.listContainer}>
@@ -712,7 +715,6 @@ const {newPers2} = route.params;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: '0%', //to change the vertical positioning of the flatlist
     marginHorizontal: '5%',
     alignItems: 'center',
     justifyContent: 'center',

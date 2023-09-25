@@ -71,39 +71,51 @@ export default function Perspective({ route, navigation }) {
         <BackButton
           label={'back button'}
           onPress={() => { navigation.goBack('Perspective'); }}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
         <BackButton
           label={'back button'}
           onPress={() => { navigation.navigate('NarrativesScreen') }}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
         />
       </View>
       <View
-        style={{ top: '5%',        marginBottom: '10%',          
-        backgroundColor: '#FFF5EF',
+        style={{ top: '5%',        
+        marginBottom: '12%',          
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '65%',
         height: 50,
         borderTopRightRadius: 50,
         borderBottomRightRadius: 50, }}>
         <Text
           style={{
             fontFamily: 'WorkSans-Regular',
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: '300',
             marginLeft: '5%',
             marginRight: '5%',
-            color: '#18163A',
+            color: '#000000',
             letterSpacing: 0,
           }}>
           Who is {otherChar} to {mainChar}?
         </Text>
+        <Text
+          style={{
+            fontFamily: 'WorkSans-Regular',
+            fontSize: 18,
+            fontStyle: 'italic',
+            fontWeight: '300',
+            marginLeft: '5%',
+            marginRight: '5%',
+            color: '#000000',
+            letterSpacing: 0,
+          }}>
+          (Pick the first one that comes to mind)
+        </Text>
       </View>
 
       <ScrollView>
-        <View style={{ marginTop: '5%', marginBottom: '2%', marginHorizontal: '4%' }}>
+        <View style={{ marginTop: '8%', marginBottom: '3%', marginHorizontal: '4%' }}>
           <Text style={styles.headertext}>
             Family
           </Text>
@@ -138,7 +150,7 @@ export default function Perspective({ route, navigation }) {
 
         </View>
 
-        <View style={{ marginTop: '5%', marginBottom: '2%', marginHorizontal: '4%' }}>
+        <View style={{ marginTop: '8%', marginBottom: '3%', marginHorizontal: '4%' }}>
           <Text style={styles.headertext}>
             Significant Other
           </Text>
@@ -165,7 +177,7 @@ export default function Perspective({ route, navigation }) {
 
         </View>
 
-        <View style={{ marginTop: '5%', marginBottom: '2%', marginHorizontal: '4%' }}>
+        <View style={{ marginTop: '8%', marginBottom: '3%', marginHorizontal: '4%' }}>
           <Text style={styles.headertext}>
             Work
           </Text>
@@ -199,7 +211,7 @@ export default function Perspective({ route, navigation }) {
 
         
 
-        <View style={{ marginTop: '5%', marginBottom: '2%', marginHorizontal: '4%' }}>
+        <View style={{ marginTop: '8%', marginBottom: '3%', marginHorizontal: '4%' }}>
           <Text style={styles.headertext}>
             Social
           </Text>
@@ -268,7 +280,7 @@ export default function Perspective({ route, navigation }) {
                 fontWeight: '300',
                 fontSize: 20,
                 letterSpacing: 4,
-                color: '#18163A',
+                color: '#000000',
                 fontFamily: 'WorkSans-Regular',
               }}>
               Next
@@ -331,7 +343,7 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: '300',
     fontSize: 16,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Regular',
     letterSpacing: 1,
   },
@@ -339,14 +351,14 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     fontWeight: '400',
     fontSize: 16,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Regular',
   },
   headertext: {
     fontWeight: '300',
     fontSize: 20,
     letterSpacing: 1,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Regular',
   },
   verticalStyle: {

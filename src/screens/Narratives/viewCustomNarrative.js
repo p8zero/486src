@@ -24,29 +24,27 @@ export default function ViewCustomNarratives({navigation, route}) {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('editNarratives');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
 
       </View>
 
         <ScrollView style={{top: "10%"}}>
           <View style={{ 
-      marginRight: '15%',
       marginBottom: '2%', 
-      backgroundColor: '#FFF5EF',
       flexdirection: 'row',
       justifyContent: 'center',
-      width: '50%',
+      marginLeft: '2.5%',
       height: 50,
       borderTopRightRadius: 50,
       borderBottomRightRadius: 50,}}>
           <Text
             style={{
               fontFamily: 'WorkSans-Light',
-              fontSize: 20,
+              fontSize: 22,
               fontWeight: '300',
               letterSpacing: 0,
-              color: '#18163A',
+              color: '#000000',
               paddingHorizontal: 10,
             }}>
             Plot Point
@@ -60,7 +58,7 @@ export default function ViewCustomNarratives({navigation, route}) {
               fontWeight: '300',
               marginHorizontal: '10%',
               letterSpacing: 0,
-              color: '#18163A'
+              color: '#000000'
             }}>
             {compName}
           </Text>
@@ -72,7 +70,7 @@ export default function ViewCustomNarratives({navigation, route}) {
               marginHorizontal: '5%',
               fontWeight: '300',
               letterSpacing: 1,
-              color: '#18163A',
+              color: '#000000',
               marginBottom: '3%'
             }}>
             What it Feels Like
@@ -87,7 +85,7 @@ export default function ViewCustomNarratives({navigation, route}) {
               fontWeight: '300',
               marginHorizontal: '10%',
               letterSpacing: 0,
-              color: '#18163A'
+              color: '#000000'
             }}>
             {compDescription}
           </Text>
@@ -99,14 +97,12 @@ export default function ViewCustomNarratives({navigation, route}) {
               marginHorizontal: '5%',
               fontWeight: '300',
               letterSpacing: 1,
-              color: '#18163A',
+              color: '#000000',
               marginBottom: '3%'
             }}>
             What This Can Look Like
           </Text>
-          <View style={{ 
-                borderTopWidth: 1, 
-                borderTopColor: '#FFF5EF',}}>
+          <View style={{ }}>
           
             <FlatList
               data={compView}
@@ -149,7 +145,7 @@ export default function ViewCustomNarratives({navigation, route}) {
           marginRight: 6,
           fontWeight: '300',
           fontSize: 18,
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           letterSpacing: 0,
         },

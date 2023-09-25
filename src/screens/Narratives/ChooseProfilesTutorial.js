@@ -54,7 +54,7 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             fontWeight: '300',
             color: '#18163A',
             letterSpacing: 0,
-            fontSize: 20,
+            fontSize: 22,
             marginLeft: '3%'
         }}>How to Create Characters
         </Text>
@@ -65,7 +65,7 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -79,7 +79,7 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -92,7 +92,7 @@ const AnalysisDetailsTutorial = ({navigation}) => {
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',

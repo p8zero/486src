@@ -10,7 +10,7 @@ export default function OnBoarding({navigation}) {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: '#F6DEDC',
+        backgroundColor: '#FFF5EF',
       }}>
 
 <View
@@ -20,6 +20,7 @@ export default function OnBoarding({navigation}) {
           top: '8%',
           marginHorizontal: '2.5%',
           width: '95%',
+          marginBottom: '5%'
         }}>
         <BackButton
           label={'back button'}
@@ -32,169 +33,125 @@ export default function OnBoarding({navigation}) {
         
       <ScrollView style={{marginTop: '5%'}}>
 
-      <View style={{backgroundColor:'#FFF5EF',
+      <View style={{
             justifyContent: 'center',
-            width: '65%',
-            marginTop: '12%', 
-            height: 50,
-            borderTopRightRadius: 50,
-            borderBottomRightRadius: 50,
+            width: '90%',
+            marginTop: '6%', 
             }}>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+            color: '#000000', 
             textAlign: 'left',
-            fontWeight: '300', 
-            fontSize: 20,
-            paddingLeft: '5%',
+            fontWeight: '400', 
+            fontSize: 22,
+            paddingLeft: '3%',
             paddingRight: '5%',
-            letterSpacing: 1,}}>
-        nara - Relationship Narrator
+            letterSpacing: 0,}}>
+        nara - Perspective Narrator
         </Text>
         </View>
-      
 
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '3%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-            When you're wondering...
-        </Text>
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '10%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-            “what might have led them to feel this way?"
-        </Text>
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '10%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-            “what has to change for them to feel differently?”
-        </Text>
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '10%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-            “how might they feel going forward?”
-        </Text>
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '10%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-           “how might they feel if things changed?”
-        </Text>
 
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '0%',
           marginTop: '5%'}}>
 
-nara is a private space to think things through, to help you find some clarity
+nara is a private space to help you find a clear idea around a person's perspective, how they might think and feel and why, in given moment
 
         </Text>
-
-        <Text style = {{
-            color: '#18163A',
-            fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            letterSpacing: 0.5,
-            fontSize: 16,
-            marginRight: '10%',
-            marginLeft: '3%',
-            marginBottom: '0%',
-            marginTop: '5%'
-        }}>
-Not to establish an objective truth or to define what's right and what's wrong
-        </Text>
-
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '0%',
           marginTop: '5%'}}>
 
-But to understand what led them to feel this way and how they might feel going forward
+You can explore a few different aspects of a person's perspective:
 
         </Text>
-
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
+          marginRight: '10%',
+          marginLeft: '10%',
+          marginBottom: '0%',
+          marginTop: '5%'}}>
+
+- what led them to feel this way or what has to change for them to feel differently?
+
+        </Text>
+        <Text style={{            
+          color: '#000000',
+          fontFamily: 'WorkSans-Light',
+          fontWeight: '300',
+          letterSpacing: 0.5,
+          fontSize: 18,
+          marginRight: '10%',
+          marginLeft: '10%',
+          marginBottom: '0%',
+          marginTop: '5%'}}>
+- how might they feel after what happened or how they might feel if things changed?
+
+        </Text>
+
+
+        <Text style = {{
+            color: '#000000',
+            fontFamily: 'WorkSans-Light',
+            fontWeight: '300',
+            letterSpacing: 0.5,
+            fontSize: 18,
+            marginRight: '10%',
+            marginLeft: '3%',
+            marginBottom: '0%',
+            marginTop: '5%'
+        }}>
+nara does not establish an objective truth or define what's right and what's wrong
+        </Text>
+
+        <Text style={{            
+          color: '#000000',
+          fontFamily: 'WorkSans-Light',
+          fontWeight: '300',
+          letterSpacing: 0.5,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '10%',
           marginTop: '5%'}}>
 
-Or to discover what has to change for them to feel differently and how they might feel if things changed
+But helps you understand, discover or confirm what a person may be thinking and feeling in a given moment
 
         </Text>
+
         
 
 
       
         
-        <View style={{backgroundColor:'#FFF5EF',
+        <View style={{
             justifyContent: 'center',
             width: '65%',
             marginTop: '0%', 
-            height: 50,
-            borderTopRightRadius: 50,
-            borderBottomRightRadius: 50,
             }}>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+            color: '#000000', 
             textAlign: 'left',
-            fontWeight: '300', 
-            fontSize: 20,
+            fontWeight: '400', 
+            fontSize: 22,
             paddingLeft: '5%',
             paddingRight: '5%',
             letterSpacing: 1,}}>
@@ -203,82 +160,28 @@ How to Use nara
         </Text>
         </View>
 
-        <Text style={{            
-          color: '#18163A',
-          fontFamily: 'WorkSans-Light',
-          fontWeight: '300',
-          letterSpacing: 0.5,
-          fontSize: 16,
-          marginRight: '10%',
-          marginLeft: '3%',
-          marginBottom: '0%',
-          marginTop: '5%'}}>
-
-The purpose of nara is to gain clarity around a person's perspective, either the: 
-
-        </Text>
-        <Text style={{            
-          color: '#18163A',
-          fontFamily: 'WorkSans-Light',
-          fontWeight: '300',
-          letterSpacing: 0.5,
-          fontSize: 16,
-          marginRight: '10%',
-          marginLeft: '10%',
-          marginBottom: '0%',
-          marginTop: '5%'}}>
-
-Exposition - what led them to feel this way or what has to change for them to feel differently
-
-        </Text>
-        <Text style={{            
-          color: '#18163A',
-          fontFamily: 'WorkSans-Light',
-          fontWeight: '300',
-          letterSpacing: 0.5,
-          fontSize: 16,
-          marginRight: '10%',
-          marginLeft: '10%',
-          marginBottom: '0%',
-          marginTop: '5%'}}>
-Foreshadowing - how might they feel going forward or how they might feel if things changed
-
-        </Text>
+        
         
         <Text style={{            
-         color: '#18163A',
+         color: '#000000',
          fontFamily: 'WorkSans-Light',
          fontWeight: '300',
          letterSpacing: 0.5,
-         fontSize: 16,
+         fontSize: 18,
          marginRight: '10%',
          marginLeft: '3%',
          marginBottom: '0%',
          marginTop: '5%'}}>
 
 
-To do this, you create characters and the stories they take part in.
+To do this, you start by creating characters
         </Text>
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
-          marginRight: '10%',
-          marginLeft: '3%',
-          marginBottom: '0%',
-          marginTop: '5%'}}>
-
-And nara gives you the most likely answer to the question - the narration.
-
-        </Text>
-        <Text style={{            
-          color: '#18163A',
-          fontFamily: 'WorkSans-Light',
-          fontWeight: '300',
-          letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '0%',
@@ -288,63 +191,132 @@ And nara gives you the most likely answer to the question - the narration.
 A character is a representation of a individual - their personality and what they value.
         </Text>
         <Text style={{            
-          color: '#18163A',
+         color: '#000000',
+         fontFamily: 'WorkSans-Light',
+         fontWeight: '300',
+         letterSpacing: 0.5,
+         fontSize: 18,
+         marginRight: '10%',
+         marginLeft: '3%',
+         marginBottom: '0%',
+         marginTop: '5%'}}>
+
+
+These characters are then used to write stories
+        </Text>
+        <Text style={{            
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '0%',
           marginTop: '5%'}}>
 
 
-A story is a representation of an interaction between two characters, whether it's a one-time thing or an ongoing pattern.
+A story, within nara, is a representation of an interaction between two characters
         </Text>
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
+          marginRight: '10%',
+          marginLeft: '3%',
+          marginBottom: '0%',
+          marginTop: '5%'}}>
+
+The stories are written from the perspective of a character (the narrator)
+
+        </Text>
+
+
+        <Text style={{            
+          color: '#000000',
+          fontFamily: 'WorkSans-Light',
+          fontWeight: '300',
+          letterSpacing: 0.5,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '0%',
           marginTop: '5%'}}>
 
 
-Think of it as the story you would tell someone if they asked you "So, what happened there?".
+Think of story you would tell someone if they asked you "So, what happened there?"
         </Text>
 
-
-
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
+          marginRight: '10%',
+          marginLeft: '3%',
+          marginBottom: '0%',
+          marginTop: '5%'}}>
+
+
+Once a story is written, nara reads the story and provides a narration that illustrates what the narrator's perspective might likely be for the story that was written
+        </Text>
+        <Text style={{fontFamily: 'WorkSans-light', 
+            color: '#000000', 
+            textAlign: 'left',
+            fontWeight: '300', 
+            fontSize: 18,
+            marginTop: 20,
+            marginRight: '5%',
+            marginLeft: '3%', 
+            letterSpacing: 0,}}>
+           Both the story summary and the narration summary are comprised of plot points that can be viewed individually to provide more depth
+        </Text>
+
+
+        <Text style={{            
+          color: '#000000',
+          fontFamily: 'WorkSans-Light',
+          fontWeight: '300',
+          letterSpacing: 0.5,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '00%',
           marginTop: '5%'}}>
 
-How you use nara is up to you. It will take some time and energy on your part to craft these characters, stories and to process the narrations, but it's all in the service of helping you gain clarity.
+How you use nara is up to you. It will take some time and energy on your part to craft these characters, stories and to process the narrations
+
+        </Text>
+        <Text style={{            
+          color: '#000000',
+          fontFamily: 'WorkSans-Light',
+          fontWeight: '300',
+          letterSpacing: 0.5,
+          fontSize: 18,
+          marginRight: '10%',
+          marginLeft: '3%',
+          marginBottom: '00%',
+          marginTop: '5%'}}>
+
+But every part of the process was purposefully crafted to give you the clearest idea of the person's likely perspective
 
         </Text>
 
         <Text style={{            
-          color: '#18163A',
+          color: '#000000',
           fontFamily: 'WorkSans-Light',
           fontWeight: '300',
           letterSpacing: 0.5,
-          fontSize: 16,
+          fontSize: 18,
           marginRight: '10%',
           marginLeft: '3%',
           marginBottom: '20%',
           marginTop: '5%'}}>
 
-And don't worry, you will find guides on key pages to help you along your way.
+And don't worry, you will find guides on key pages to help you along the way
 
         </Text>
 

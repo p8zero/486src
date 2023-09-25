@@ -29,38 +29,38 @@ mixpanel.init();
       }}>
 
       <View style={{
-          backgroundColor: '#FFF5EF',
           flexdirection: 'row',
           justifyContent: 'center',
           marginTop: '5%',
-          width: '65%',
+          width: '70%',
+          marginHorizontal: '2.5%',
           height: 55,
           borderTopRightRadius: 50,
           borderBottomRightRadius: 50,
       }}>
       <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+            color: '#000000', 
             textAlign: 'left',
             justifyContent: 'center',
             fontWeight: '300', 
-            fontSize: 20,
+            fontSize: 22,
             marginLeft: "5%",
             marginRight: '5%',
             letterSpacing: 0,
             flexWrap: 'wrap',}}>
-              What do you want clarity around?
+              What do you want to get a clear idea of?
         </Text>
       </View> 
 
       <TouchableOpacity 
-      style={{backgroundColor: '#EDBDBA', marginHorizontal: '5%', height: 200, flexDirection: 'row', borderRadius: 30, marginTop: '10%', alignItems: 'center', justifyContent: 'center'}}
+      style={{backgroundColor: '#FFF5EF', marginHorizontal: '5%', height: 200, flexDirection: 'row', borderRadius: 30, marginTop: '10%', alignItems: 'center', justifyContent: 'center'}}
       onPress={() => {clarityInTheMoment = true; navigation.navigate('ChooseProfiles');
                       mixpanel.track('ClarityMoment', {'Flow': 'Moment'});
     }}
       >
       <View style={{flex: 1, justifyContent: 'center',}}>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+            color: '#000000', 
             textAlign: 'left',
             fontWeight: '300', 
             fontSize: 22,
@@ -70,28 +70,27 @@ mixpanel.init();
               Exposition
         </Text>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+            color: '#000000', 
             textAlign: 'left',
             fontWeight: '300', 
             fontSize: 18,
             marginTop: 20,
-            fontStyle: 'italic',
             marginRight: '5%',
             marginLeft: '5%', 
             letterSpacing: 0,}}>
-              Clarity around what led them to feel this way or what has to change for them to feel differently
+              What led them to feel this way or what has to change for them to feel differently?
         </Text>
 
         </View>
       </TouchableOpacity>
       <TouchableOpacity 
-      style={{backgroundColor: '#EDBDBA', marginHorizontal: '5%', height: 200, flexDirection: 'row', borderRadius: 30, marginTop: '5%', alignItems: 'center', justifyContent: 'center'}}
+      style={{backgroundColor: '#FFF5EF', marginHorizontal: '5%', height: 200, flexDirection: 'row', borderRadius: 30, marginTop: '5%', alignItems: 'center', justifyContent: 'center'}}
       onPress={() => {clarityInTheFuture = true; navigation.navigate('ChooseProfiles'); 
                       mixpanel.track('ClarityFuture', {'Flow': 'Future'});
             }}>
         <View style={{flex: 1, justifyContent: 'center'}}>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+               color: '#000000',
             textAlign: 'left',
             fontWeight: '300', 
             fontSize: 22,
@@ -101,16 +100,15 @@ mixpanel.init();
               Foreshadowing
         </Text>
         <Text style={{fontFamily: 'WorkSans-light', 
-            color: '#18163A', 
+               color: '#000000', 
             textAlign: 'left',
             fontWeight: '300', 
             fontSize: 18,
             marginTop: 20,
-            fontStyle: 'italic',
             marginRight: '5%',
             marginLeft: '5%', 
             letterSpacing: 0,}}>
-            Clarity around how might they feel going forward or how they might feel if things changed
+            How might they feel going forward or how they might feel if things changed?
         </Text>
         </View>
       </TouchableOpacity>

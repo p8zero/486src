@@ -155,9 +155,9 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
 
   const checkFlow = () => {
     if (flow == "clarityInTheMoment") {
-      return "Looking for clarity around what led them to feel this way or what has to change for them to feel differently";
+      return "What led them to feel this way or what has to change for them to feel differently?";
     } else if (flow == "clarityInTheFuture") {
-      return "Looking for clarity around how might they feel going forward or how they might feel if things went differently";
+      return "How might they feel going forward or how they might feel if things changed?";
     }
   };
 
@@ -238,7 +238,7 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
             flexDirection: "row",
           }}
         >
-          <View style={{ marginRight: "3%" }}>
+          <View style={{ marginRight: "4%" }}>
             <UserIcon
               userName={mainChar}
               inColor={"#F6DEDC"}
@@ -250,17 +250,17 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
               style={{
                 textAlign: "center",
                 fontFamily: "WorkSans-Light",
-                color: "#18163A",
+                color: "#000000",
                 fontSize: 16,
                 fontWeight: "300",
-                letterSpacing: 4,
+                letterSpacing: 2,
                 paddingTop: 10,
               }}
             >
               {mainChar}
             </Text>
           </View>
-          <View style={{ marginLeft: "3%" }}>
+          <View style={{ marginLeft: "4%" }}>
             <UserIcon
               userName={otherChar}
               inColor={"#F6DEDC"}
@@ -272,10 +272,10 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
               style={{
                 textAlign: "center",
                 fontFamily: "WorkSans-Light",
-                color: "#18163A",
+                color: "#000000",
                 fontSize: 16,
                 fontWeight: "300",
-                letterSpacing: 4,
+                letterSpacing: 2,
                 paddingTop: 10,
               }}
             >
@@ -287,14 +287,12 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
         <View
           style={{
             marginTop: "5%",
-            marginBottom: "5%",
-            marginLeft: "10%",
             justifyContent: "center",
-            height: 140,
+            height: 110,
             width: "100%",
-            backgroundColor: "#EDBDBA",
-            borderTopLeftRadius: 30,
-            borderBottomLeftRadius: 30,
+            backgroundColor: "#FFF5EF",
+            borderTopLeftRadius: 50,
+
           }}
         >
           <Text
@@ -302,12 +300,12 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
               fontFamily: "WorkSans-Light",
               fontWeight: "300",
               fontSize: 18,
-              color: "#18163A",
+              color: "#000000",
               fontStyle: "italic",
-              marginLeft: "5%",
-              marginRight: '15%',
+              marginLeft: "10%",
+              marginRight: '5%',
               marginBottom: "3%",
-              marginTop:'5%'
+              marginTop:'3%'
             }}
           >
             {title}
@@ -317,10 +315,9 @@ const SeeNarrativesButtons = ({ route, navigation }) => {
               fontFamily: "WorkSans-Light",
               fontWeight: "300",
               fontSize: 16,
-              color: "#18163A",
-              marginLeft: "5%",
-              marginRight: '10%',
-              marginBottom: "2%",
+              color: "#000000",
+              marginLeft: "10%",
+              marginRight: '5%',
             }}
           >
             {checkFlow()}

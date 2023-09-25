@@ -23,24 +23,20 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('CreateCustomPersonas');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#9cc8C6',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '80%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -48,11 +44,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -61,11 +57,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             There are 31 questions to answer per character description. I know it seems like a lot, but you really can't reduce a person down to a 10 question list. 
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -74,11 +70,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             We've done what we could to minimize the number of questions to answer and our research led us to this list.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -87,11 +83,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             nara is designed to take the narrator's character description into account when creating it's narration.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -99,19 +95,15 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
         }}>
             You'll get the most out of nara if you can take a little time and answer the character description questions as best as you can.
         </Text>
-    <View style={{backgroundColor: '#9cc8C6',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -119,11 +111,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -132,11 +124,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             You may feel that you don't know a person well enough to answer certain questions or that answering them a certain way is casting a judgement on them.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -145,11 +137,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             Rest assured, this is not the case. There is no pressure for you to have to choose the "right" answers to these questions.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -158,11 +150,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             These character descriptions are a representation of an individual and it does not define them.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -171,11 +163,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             Just remember these two things when you're answering the questions:
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -184,11 +176,11 @@ const CreateCustomPersonasTutorial = ({navigation}) => {
             1. nara is private. No one will see your answers to a question.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '50%',

@@ -10,8 +10,10 @@ const BackButtonCreateNarratives = ({onPress, icon}) => {
         borderRadius: 30,
         width: 40,
         height: 40,
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
-      <View style={{paddingLeft: 6, paddingVertical: 4}}>{icon}</View>
+      <View style={{}}>{icon}</View>
     </TouchableOpacity>
   );
 };

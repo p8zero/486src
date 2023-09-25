@@ -182,7 +182,7 @@ const Perspective2 = ({ route, navigation }) => {
             navigation.goBack("Relationship");
           }}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
         <BackButton
@@ -190,11 +190,11 @@ const Perspective2 = ({ route, navigation }) => {
           onPress={() => {
             navigation.navigate("NarrativesScreen");
           }}
-          icon={<Ionicons name="close" size={24} color="#18163A" />}
+          icon={<Ionicons name="close" size={24} color="#000000" />}
         />
       </View>
 
-      <View style={{marginBottom: '0%', marginTop: '8%', backgroundColor: '#FFF5EF',
+      <View style={{marginBottom: '0%', marginTop: '8%',
         flexdirection: 'row',
         justifyContent: 'center',
         width: '65%',
@@ -206,9 +206,9 @@ const Perspective2 = ({ route, navigation }) => {
             marginLeft: "5%",
             marginRight: "5%",
             fontFamily: "WorkSans-Regular",
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: "300",
-            color: "#18163A",
+            color: "#000000",
             letterSpacing: 0,
           }}
         >
@@ -268,7 +268,7 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updatePositiveAndLively(3)}
           >
-            <Text style={styles.text}>Delight</Text>
+            <Text style={styles.text}>Delighted</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
@@ -276,15 +276,15 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updatePositiveThoughts(0)}
           >
-            <Text style={styles.text}>Courage</Text>
+            <Text style={styles.text}>Brave</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
-              positiveThoughts[1] == 1 ? styles.buttonSelected2 : styles.button2
+              positiveThoughts[1] == 1 ? styles.buttonSelected : styles.button
             }
             onPress={() => updatePositiveThoughts(1)}
           >
-            <Text style={styles.text}>Hope</Text>
+            <Text style={styles.text}>Hopeful</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
@@ -292,27 +292,27 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updatePositiveThoughts(2)}
           >
-            <Text style={styles.text}>Humility</Text>
+            <Text style={styles.text}>Humble</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
-              positiveThoughts[3] == 1 ? styles.buttonSelected3 : styles.button3
+              positiveThoughts[3] == 1 ? styles.buttonSelected : styles.button
             }
             onPress={() => updatePositiveThoughts(3)}
           >
-            <Text style={styles.text}>Satisfaction</Text>
+            <Text style={styles.text}>Satisfied</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
-              positiveThoughts[4] == 1 ? styles.buttonSelected2 : styles.button2
+              positiveThoughts[4] == 1 ? styles.buttonSelected : styles.button
             }
             onPress={() => updatePositiveThoughts(4)}
           >
-            <Text style={styles.text}>Trust</Text>
+            <Text style={styles.text}>Trusting</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
-              quietPositive[0] == 1 ? styles.buttonSelected : styles.button
+              quietPositive[0] == 1 ? styles.buttonSelected2 : styles.button2
             }
             onPress={() => updateQuietPositive(0)}
           >
@@ -328,11 +328,11 @@ const Perspective2 = ({ route, navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={
-              quietPositive[2] == 1 ? styles.buttonSelected3 : styles.button3
+              quietPositive[2] == 1 ? styles.buttonSelected : styles.button
             }
             onPress={() => updateQuietPositive(2)}
           >
-            <Text style={styles.text}>Contentment</Text>
+            <Text style={styles.text}>Content</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
@@ -348,43 +348,43 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updateQuietPositive(4)}
           >
-            <Text style={styles.text}>Relief</Text>
+            <Text style={styles.text}>Relieved</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={caring[0] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateCaring(0)}
           >
-            <Text style={styles.text}>Affection</Text>
+            <Text style={styles.text}>Affectionate</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={caring[1] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateCaring(1)}
           >
-            <Text style={styles.text}>Empathy</Text>
+            <Text style={styles.text}>Empathetic</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={caring[2] == 1 ? styles.buttonSelected3 : styles.button3}
+            style={caring[2] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateCaring(2)}
           >
-            <Text style={styles.text}>Friendliness</Text>
+            <Text style={styles.text}>Friendly</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={caring[3] == 1 ? styles.buttonSelected2 : styles.button2}
             onPress={() => updateCaring(3)}
           >
-            <Text style={styles.text}>Love</Text>
+            <Text style={styles.text}>Loving</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={reactive[0] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateReactive(0)}
           >
-            <Text style={styles.text}>Interest</Text>
+            <Text style={styles.text}>Interested</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={reactive[1] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateReactive(1)}
           >
-            <Text style={styles.text}>Surprise</Text>
+            <Text style={styles.text}>Surprised</Text>
           </TouchableOpacity>
         </View>
 
@@ -501,7 +501,7 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updateNegativeThoughts(0)}
           >
-            <Text style={styles.text}>Doubt</Text>
+            <Text style={styles.text}>Doubtful</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
@@ -509,7 +509,7 @@ const Perspective2 = ({ route, navigation }) => {
             }
             onPress={() => updateNegativeThoughts(1)}
           >
-            <Text style={styles.text}>Envy</Text>
+            <Text style={styles.text}>Jealous</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={
@@ -595,7 +595,7 @@ const Perspective2 = ({ route, navigation }) => {
             style={agitation[2] == 1 ? styles.buttonSelected : styles.button}
             onPress={() => updateAgitation(2)}
           >
-            <Text style={styles.text}>Tension</Text>
+            <Text style={styles.text}>Tense</Text>
           </TouchableOpacity>
         </View>
 
@@ -635,7 +635,7 @@ const Perspective2 = ({ route, navigation }) => {
                 fontWeight: "300",
                 fontSize: 20,
                 letterSpacing: 4,
-                color: "#18163A",
+                color: "#000000",
                 fontFamily: "WorkSans-Regular",
               }}
             >
@@ -719,22 +719,22 @@ const styles = {
   text: {
     fontWeight: "300",
     fontSize: 16,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
     letterSpacing: 1,
   },
   textSelected: {
     paddingTop: 40,
-    fontWeight: "400",
+    fontWeight: "300",
     fontSize: 16,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
   },
   headertext: {
     fontWeight: "300",
     fontSize: 20,
     letterSpacing: 1,
-    color: "#18163A",
+    color: "#000000",
     fontFamily: "WorkSans-Regular",
   },
 };

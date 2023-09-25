@@ -33,24 +33,20 @@ const AnalysisSummaryTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('AnalysisSummary');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -58,11 +54,11 @@ const AnalysisSummaryTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -71,11 +67,11 @@ const AnalysisSummaryTutorial = ({navigation}) => {
             The narration summary is meant to capture the essence of the exposition or foreshadowing of the story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -84,11 +80,11 @@ const AnalysisSummaryTutorial = ({navigation}) => {
             To look beyond the specific words or actions that happened and more towards the meaning and feelings behind them. 
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -98,11 +94,11 @@ const AnalysisSummaryTutorial = ({navigation}) => {
         </Text>
         
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -111,11 +107,11 @@ const AnalysisSummaryTutorial = ({navigation}) => {
 Each plot point within the story and narration contains a list of what that specific behavior or feeling could look like
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -124,11 +120,11 @@ Each plot point within the story and narration contains a list of what that spec
             To see these, scroll down, select "View". The guide on the narration plot points page will provide more details.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -137,31 +133,27 @@ Each plot point within the story and narration contains a list of what that spec
             Once you're done reading the summary, scroll down and select "Done" and the story + narration will be stored on the main page for you to access whenever you need.
         </Text>
 
-        <View style={{backgroundColor: '#EDBDBA',
+        <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
-        }}>Personalizing the Narration or Story
+        }}>Personalizing the Narration & Story
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -170,11 +162,11 @@ Each plot point within the story and narration contains a list of what that spec
             If you want to personalize this narration and / or the story, there is a notes page that you use when you select the completed story on the main page and go to the "Options" menu.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -183,11 +175,11 @@ Each plot point within the story and narration contains a list of what that spec
             If you're having trouble finding the words to write down, you can try the following:
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -196,11 +188,11 @@ Each plot point within the story and narration contains a list of what that spec
             1. Look through the examples for each plot point and see if any of those resonate with you
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -209,11 +201,11 @@ Each plot point within the story and narration contains a list of what that spec
             2. Take those examples are write them into the notes page
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -222,11 +214,11 @@ Each plot point within the story and narration contains a list of what that spec
             3. Do this for every plot point in the narration and / or story summary
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -234,7 +226,7 @@ Each plot point within the story and narration contains a list of what that spec
         }}>
             The video below gives an example of that.
         </Text>
-    <View style={{marginHorizontal: '5%', marginBottom: '0%'}}>     
+    <View style={{marginHorizontal: '5%',}}>     
     <YoutubePlayer
                 height={300}
                 width={"100%"}
@@ -245,19 +237,15 @@ Each plot point within the story and narration contains a list of what that spec
                 onChangeState={onStateChange}
             />
 </View>
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -265,11 +253,11 @@ Each plot point within the story and narration contains a list of what that spec
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -278,11 +266,11 @@ Each plot point within the story and narration contains a list of what that spec
            You are not limited to writing just one story for whatever relationship interaction you are trying to find clarity for.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -291,11 +279,11 @@ Each plot point within the story and narration contains a list of what that spec
            Maybe you weren't sure what to add or not to add in your story and you want multiple versions.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -304,11 +292,11 @@ Each plot point within the story and narration contains a list of what that spec
 Maybe you're curious to see what might happen if things were done differently.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -317,11 +305,11 @@ Maybe you're curious to see what might happen if things were done differently.
 Maybe you know how you want things to be and would like to see how you might get there.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -341,19 +329,16 @@ Whatever it is, you have the freedom to write as many stories as you need.
                 onChangeState={onStateChange}
             />
 </View>
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '90%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -361,11 +346,11 @@ Whatever it is, you have the freedom to write as many stories as you need.
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -374,11 +359,11 @@ Whatever it is, you have the freedom to write as many stories as you need.
             As we've stated in previous guides, stories and narrations are meant to be subjective and biased. It's all from the narrator's perspective.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -387,11 +372,11 @@ Whatever it is, you have the freedom to write as many stories as you need.
             Now if you're interested in seeing both sides of the story, the perspectives of both character's, you can do that by writing two opposing stories.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',

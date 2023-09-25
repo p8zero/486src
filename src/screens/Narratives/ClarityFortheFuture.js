@@ -30,35 +30,52 @@ export default function HomeScreen({navigation}) {
               <BackButtonMenu
                 label={'back button'}
                 onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
-                icon={<MenuIcon name="menu-icon" size={24} color="#18163A" />}
+                icon={<MenuIcon name="menu-icon" size={24} color="#000000" />}
               />
-            <BackButtonCreateNarratives
-            label={'back button'}
-            onPress={() => {navigation.navigate('NarrativesScreen')}}
-            icon={<Ionicons name="add-outline" size={30} color="#FFF5EF" />}
-          />
+      <View style={{justifyContent: 'center',}}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('NarrativesScreen');
+          }}
+          style={{
+            backgroundColor: '#18163A',
+            borderRadius: 50,
+            width: 160,
+            height: 40,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <Text
+            style={{
+              textAlign: 'center',
+              paddingHorizontal: 20,
+              fontWeight: '400',
+              fontSize: 18,
+              letterSpacing: 0,
+              color: '#FFF5EF',
+              fontFamily: 'WorkSans-Regular',
+            }}>
+            Write a Story
+          </Text>
+        </TouchableOpacity>
+      </View>
             </View>
 
           
          
-      <View style={{marginTop: '5%',  
-      marginBottom: '5%',      
-        backgroundColor: '#FFF5EF',
+      <View style={{marginTop: '8%',      
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '50%',
-        height: 50,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
+        marginLeft: '5%',
+        marginBottom: '3%'}}>
         <Text style={{
           fontFamily: 'WorkSans-Light', 
           fontSize: 24, 
           fontWeight: '300', 
-          letterSpacing: 2,
-          color: '#18163A',
-          marginLeft: '5%',
+          letterSpacing: 1,
+          color: '#000000',
           }}>
-          Stories
+          Stories You've Written
         </Text>
       </View>
 

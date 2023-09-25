@@ -444,7 +444,7 @@ const PersonaElementList = props => {
             fontSize: 18,
             paddingBottom: 10,
             letterSpacing: 2,
-            color: '#18163A',
+            color: '#000000',
           }}>
           Question {count + 1}/{total}
         </Text>
@@ -582,11 +582,11 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 18,
     letterSpacing: 0,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'Worksans-Thin',
   },
   optionButtonSelectedText: {
-    fontWeight: '300',
+    fontWeight: '400',
     fontSize: 18,
     letterSpacing: 0,
     color: '#FFF5EF',
@@ -628,7 +628,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 20,
     letterSpacing: 0,
-    color: '#18163A',
+    color: '#000000',
     marginTop: '9%',
     marginHorizontal: '5%',
   },

@@ -29,7 +29,7 @@ const ViewInfoButtonPersonas = ({label1, label2, val1, val2, edit}) => {
           style={{
             fontSize: 18,
             padding: 10,
-            color: '#FFF',
+            color: '#FFF5ef',
             fontFamily: 'WorkSans-Thin',
             fontWeight: '300',
             letterSpacing: 3,

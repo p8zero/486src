@@ -35,24 +35,21 @@ const EditNarrativesTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('EditNarrative');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '70%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -60,7 +57,7 @@ const EditNarrativesTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -73,7 +70,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             Rather than have you write out every story starting with a blank page, we've created this list of plot points with which you can build your stories.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -86,7 +83,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             Each plot point represents a specific behavior or feeling.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -99,7 +96,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             They are designed to be story building blocks and you simply choose which ones are part of the story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -112,7 +109,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             Each plot point has a detailed list of examples that illustrate what it could look like. More on how to access that below.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -126,19 +123,16 @@ const EditNarrativesTutorial = ({navigation}) => {
         </Text>
     
       
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '80%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -146,7 +140,7 @@ const EditNarrativesTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -159,7 +153,7 @@ const EditNarrativesTutorial = ({navigation}) => {
            Creating a story with the plot points is simple. Read through the different categories and select the ones that are relevant to the story you're writing.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -172,7 +166,7 @@ const EditNarrativesTutorial = ({navigation}) => {
            Remember, you're selecting the plot points from the narrator's point of view.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -185,7 +179,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             If you select a plot point, scroll down and click "View", you'll go to a page that contains a list of what that specific behavior or feeling could look like
         </Text>
                 <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -199,7 +193,7 @@ const EditNarrativesTutorial = ({navigation}) => {
             (If the plot point is already selected, you might have to unselect and then reselect to see the right set of examples.)
         </Text>
                 <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -225,19 +219,16 @@ const EditNarrativesTutorial = ({navigation}) => {
 </View> 
         
     
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
-          height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
+          width: '80%',
+
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -245,7 +236,7 @@ const EditNarrativesTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
@@ -258,7 +249,7 @@ const EditNarrativesTutorial = ({navigation}) => {
           If you selected a story theme as is or want to change a story theme, there will be plot points that have already been selected for you.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,

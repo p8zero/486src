@@ -34,24 +34,23 @@ const FinalNarrativeTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('FinalNarrative');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
+          width: '80%',
           height: 50,
           borderTopRightRadius: 50,
           borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -59,11 +58,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -72,11 +71,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
             The summary is meant to capture the essence of the relationship interaction being described.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -85,11 +84,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
             To look beyond the specific words or actions that happened and more towards the meaning and feelings behind them. 
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -98,11 +97,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
             To that end, the summary is organized into specific, unique categories. While this doesn't always make for the best reading experience, it will help you to clearly understand each part of the story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -113,19 +112,18 @@ const FinalNarrativeTutorial = ({navigation}) => {
 
 
  
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
           width: '65%',
           height: 50,
           borderTopRightRadius: 50,
           borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -133,11 +131,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -146,11 +144,11 @@ const FinalNarrativeTutorial = ({navigation}) => {
             If you want to personalize this story along with the resulting narration, there is a notes page that you use when you select the completed story on the main page and go to the "Options" menu.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',

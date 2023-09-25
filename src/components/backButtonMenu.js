@@ -10,8 +10,10 @@ const BackButtonMenu = ({onPress, icon}) => {
         borderRadius: 50,
         width: 40,
         height: 40,
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
-      <View style={{paddingLeft: 8, paddingVertical: 8}}>{icon}</View>
+      <View style={{}}>{icon}</View>
     </TouchableOpacity>
   );
 };

@@ -34,24 +34,23 @@ const SelectNarrativesTutorial = ({navigation}) => {
         <BackButton
           label={'back button'}
           onPress={() => {navigation.goBack('SelectNarratives');}}
-          icon={<Ionicons name="chevron-back-outline" size={24} color="#18163A" />}
+          icon={<Ionicons name="chevron-back-outline" size={24} color="#000000" />}
         />
       </View>
 
     <ScrollView style={{top: '18%',}}>
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
           width: '65%',
           height: 50,
           borderTopRightRadius: 50,
           borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -60,11 +59,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '00%',
@@ -73,11 +72,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
             So on this page, you have three ways to write a story.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '00%',
@@ -86,11 +85,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
             1. Create a story from the ground up
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '0%',
@@ -99,11 +98,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
             2. Choose a story theme and just go with it as is
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '10%',
             marginBottom: '10%',
@@ -112,7 +111,7 @@ const SelectNarrativesTutorial = ({navigation}) => {
             3. Choose a story theme and change it to your liking
         </Text>
 
-    <View style={{backgroundColor: '#EDBDBA',
+    <View style={{
           flexdirection: 'row',
           justifyContent: 'center',
           width: '65%',
@@ -123,8 +122,8 @@ const SelectNarrativesTutorial = ({navigation}) => {
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -133,11 +132,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
         </View>
 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '0%',
@@ -146,11 +145,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
             Select the button at the bottom of the previous page and you will go to a page with a comprehensive list of plot points. You'll select from this list to create your story.
         </Text> 
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -160,19 +159,16 @@ const SelectNarrativesTutorial = ({navigation}) => {
         </Text>
  
    
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
+          width: '90%',
           height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -180,11 +176,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -193,11 +189,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
            A story theme is what you think it is. It's a story that comes up more often than others, a "tale as old as time" if you will.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -206,11 +202,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
             They can be a complete story on their own or they can provide a great starting point for the writing process. It's up to you.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '3%',
@@ -219,11 +215,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
            There are two sets of story themes to choose from: Understanding Conflict and Pursuing Harmony.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '3%',
@@ -242,19 +238,16 @@ const SelectNarrativesTutorial = ({navigation}) => {
                 onChangeState={onStateChange}
             />
 </View>
-<View style={{backgroundColor: '#EDBDBA',
+<View style={{
           flexdirection: 'row',
           justifyContent: 'center',
-          width: '65%',
+          width: '90%',
           height: 50,
-          borderTopRightRadius: 50,
-          borderBottomRightRadius: 50,
-          marginBottom: '5%'
             }}>
     <Text style = {{
             fontFamily: 'WorkSans-Light',
-            fontWeight: '300',
-            color: '#18163A',
+            fontWeight: '400',
+            color: '#000000',
             letterSpacing: 0,
             fontSize: 20,
             marginLeft: '3%'
@@ -262,11 +255,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
         </Text>
         </View>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginTop: '5%',
@@ -275,11 +268,11 @@ const SelectNarrativesTutorial = ({navigation}) => {
           Select the story theme you want and at the bottom choose "Change". You'll go to the plot points page, only the plot points that comprise the story theme will be selected.
         </Text>
         <Text style = {{
-            color: '#18163A',
+            color: '#000000',
             fontFamily: 'WorkSans-Light',
             fontWeight: '300',
             letterSpacing: 0.5,
-            fontSize: 16,
+            fontSize: 18,
             marginRight: '10%',
             marginLeft: '3%',
             marginBottom: '10%',
@@ -288,7 +281,7 @@ const SelectNarrativesTutorial = ({navigation}) => {
 Here you'll be able to select or unselect whatever plot points you need to write your story.
         </Text>
 
-        <View style={{marginHorizontal: '5%', marginBottom: '10%'}}>     
+        <View style={{marginHorizontal: '5%', marginBottom: '40%'}}>     
     <YoutubePlayer
                 height={300}
                 width={"100%"}

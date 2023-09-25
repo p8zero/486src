@@ -46,7 +46,7 @@ const InputFieldPersonas = ({
             fontSize: 18,
             color: "#FFF5EF",
             fontFamily: "WorkSans-Light",
-            fontWeight: "300",
+            fontWeight: "400",
             letterSpacing: 2,
           }}
         >

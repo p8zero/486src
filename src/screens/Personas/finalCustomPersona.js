@@ -426,66 +426,70 @@ const FinalCustomPersona = ({ navigation, route }) => {
           label={"back button"}
           onPress={() => navigation.pop()}
           icon={
-            <Ionicons name="chevron-back-outline" size={24} color="#18163A" />
+            <Ionicons name="chevron-back-outline" size={24} color="#000000" />
           }
         />
       </View>
-      <View style={{top: '2%', 
-      marginRight: '15%', backgroundColor: '#F6DEDC',
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginTop: '5%',
+          marginBottom: '5%',
+          marginHorizontal: '2.5%'
+        }}
+      >
+      <View style={{
       flexdirection: 'row',
       justifyContent: 'center',
-      width: '55%',
-      height: 55,
-      borderTopRightRadius: 50,
-      borderBottomRightRadius: 50,}}>
+      width: '50%',
+}}>
         <Text
           style={{
             fontFamily: 'WorkSans-Light',
-            fontSize: 20,
+            fontSize: 22,
             fontWeight: '300',
             letterSpacing: 0,
-            color: '#18163A',
-            marginLeft: '5%',
-            marginRight: '5%'
+            color: '#000000',
+
           }}>
 Character Description
         </Text>
       </View>
 
-      <View style={{alignItems: 'flex-end', justifyContent: 'center', marginTop: '-12%'}}>
+      <View style={{}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('FinalCustomPersonaTutorial')
             }}
             style={{
-              backgroundColor: '#F6DEDC',
-              borderTopLeftRadius: 50,
-              borderBottomLeftRadius: 50,
+              backgroundColor: '#18163A',
+              borderRadius: 50,
               width: 150,
               height: 50,
-              marginTop: '10%',
               alignItems: 'center',
               justifyContent: 'center'
             }}>
             <Text
               style={{
                 textAlign: 'center',
-                paddingHorizontal: 20,
-                fontWeight: '300',
+                paddingHorizontal: 10,
+                fontWeight: '400',
                 fontSize: 16,
                 letterSpacing: 0,
-                color: '#18163A',
+                color: '#fff5ef',
                 fontFamily: 'WorkSans-Regular',
               }}>
-              How to Use the Description
+              More info on the Description
             </Text>
           </TouchableOpacity>
+      </View>
       </View>
 
       <View
         style={{
           flex: 1,
-          marginTop: "5%",
           backgroundColor: "#FFF5EF",
           borderTopLeftRadius: 0,
           borderTopRightRadius: 50,
@@ -510,7 +514,7 @@ Character Description
                 fontWeight: "300",
                 marginLeft: "15%",
                 marginTop: '20%',
-                color: "#18163A",
+                color: "#000000",
               }}
             >
               {PersonName}
@@ -535,7 +539,7 @@ Character Description
                 fontSize: 18,
                 fontWeight: "300",
                 letterSpacing: 0,
-                color: "#18163A",
+                color: "#000000",
               }}
             >
               {dataToText()}
@@ -560,7 +564,7 @@ Character Description
           >
             <Text
               style={{
-                color: "#18163A",
+                color: "#000000",
                 fontSize: 20,
                 fontFamily: "WorkSans-Thin",
                 fontWeight: "300",

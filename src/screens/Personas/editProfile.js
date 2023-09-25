@@ -138,21 +138,18 @@ const CreateProfilePersonas = ({navigation, route}) => {
         <BackButtonNav onPress={() => navigation.pop()} />
       </View>
       
-      <View style = {{marginTop: '10%', marginRight: '20%',       
-        backgroundColor: '#FFF5EF',
+      <View style = {{marginTop: '10%',      
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '65%',
-        height: 55,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
-          <Text style={{fontFamily: 'WorkSans-Light', color: '#18163A', fontSize: 20, fontWeight: '300', letterSpacing: 0, marginLeft: '5%'}}>
+        width: '50%',
+        marginLeft: '5%'}}>
+          <Text style={{fontFamily: 'WorkSans-Light', color: '#000000', fontSize: 22, fontWeight: '300', letterSpacing: 0, flexWrap: 'wrap'}}>
               Change Your Character
           </Text>
         </View>
 
         
-          <View style={{marginLeft: '5%', marginTop: '8%'}}> 
+          <View style={{marginLeft: '5%', marginTop: '8%', marginBottom: '2%'}}> 
             <InputFieldPersonas 
                 label={"Person's Name"}
                 name={'Name'}
@@ -172,7 +169,7 @@ const CreateProfilePersonas = ({navigation, route}) => {
           </View>
 
           <View
-             style={{marginTop: '5%', marginHorizontal: '5%', marginBottom: '10%'}}>
+             style={{marginTop: '2%', marginHorizontal: '5%', }}>
             {horizontalCheckboxGroupContainerGender()}
             </View>
 
@@ -222,7 +219,7 @@ const styles = StyleSheet.create({
   continue_button_container: {
     justifyContent: 'center',
     alignItems: 'flex-end',
-    marginBottom: '10%',
+    marginTop: '7%'
   },
 
   continue_button: {
@@ -239,7 +236,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 20,
     letterSpacing: 4,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Thin',
   },
   textStyle: {
@@ -248,7 +245,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 18,
     letterSpacing: 1,
-    color: '#18163A', 
+    color: '#000000', 
     marginRight: 20,
     marginLeft: 0,
   },

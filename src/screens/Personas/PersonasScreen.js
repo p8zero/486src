@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {StyleSheet, Text, View, useColorScheme, ScrollView} from 'react-native';
+import {StyleSheet, Text, View, useColorScheme, ScrollView, TouchableOpacity} from 'react-native';
 import BackButtonMenuPersona from '../../components/backButtonMenuPersona';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import UserFlatList from '../../components/flatListPersonas';
@@ -38,33 +38,52 @@ const PersonasScreen = ({navigation}) => {
           <BackButtonMenuPersona
             label={'back button'}
             onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
-            icon={<MenuIcon name="menu-icon" size={30} color="#18163A" />}
+            icon={<MenuIcon name="menu-icon" size={30} color="#000000" />}
           />
-          <BackButtonCreate
-            label={'back button'}
-            onPress={() => {navigation.navigate('CreateProfilePersonas'); mixpanel.track('Persona_ProfileStart');}}
-            icon={<Ionicons name="add-outline" size={30} color="#18163A" />}
-          />
+      <View style={{justifyContent: 'center',}}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('CreateProfilePersonas');
+          }}
+          style={{
+            backgroundColor: '#18163A',
+            borderRadius: 50,
+            width: 190,
+            height: 40,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <Text
+            style={{
+              textAlign: 'center',
+              paddingHorizontal: 20,
+              fontWeight: '400',
+              fontSize: 18,
+              letterSpacing: 0,
+              color: '#FFF5EF',
+              fontFamily: 'WorkSans-Regular',
+            }}>
+            Create Character
+          </Text>
+        </TouchableOpacity>
+      </View>
+            
         </View>
 
-      <View style={{marginTop: '5%',
-       marginBottom: '2%',
-        backgroundColor: '#FFF5EF',
+      <View style={{marginTop: '8%',
+       marginBottom: '3%',
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '60%',
-        height: 50,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50}}>
+        marginLeft: '5%',
+}}>
         <Text style={{
           fontFamily: 'WorkSans-Light',
           fontSize: 24,
           fontWeight: '300',
-          letterSpacing: 2,
-          color: '#18163A',
-          marginLeft: '5%',
+          letterSpacing: 1,
+          color: '#000000',
           }}>
-          Characters
+          Characters You've Created
         </Text>
       </View>
       <InputField

@@ -152,21 +152,19 @@ const CreateProfilePersonas = ({navigation}) => {
         <BackButtonNav onPress={() => navigation.pop()} />
       </View>
       
-      <View style = {{marginTop: '10%', marginRight: '20%',       
-        backgroundColor: '#FFF5EF',
+      <View style = {{marginTop: '10%',     
         flexdirection: 'row',
         justifyContent: 'center',
-        width: '65%',
-        height: 50,
-        borderTopRightRadius: 50,
-        borderBottomRightRadius: 50,}}>
-          <Text style={{fontFamily: 'WorkSans-Light', color: '#18163A', fontSize: 20, fontWeight: '300', letterSpacing: 0, marginLeft: '5%'}}>
+        width: '50%',
+        marginLeft: '2.5%'
+}}>
+          <Text style={{fontFamily: 'WorkSans-Light', color: '#000000', fontSize: 24, fontWeight: '300', letterSpacing: 0, flexWrap: 'wrap'}}>
               Create a Character
           </Text>
         </View>
 
         
-          <View style={{ marginLeft: '5%', marginTop: '8%'}}> 
+          <View style={{ marginLeft: '5%', marginTop: '8%', marginBottom: '2%'}}> 
             <InputFieldPersonas 
                 label={"Person's Name"}
                 name={'Name'}
@@ -184,7 +182,7 @@ const CreateProfilePersonas = ({navigation}) => {
           </View>
 
           <View
-             style={{marginTop: '5%', marginHorizontal: '5%', marginBottom: '10%'}}>
+             style={{marginTop: '2%', marginHorizontal: '5%'}}>
             {horizontalCheckboxGroupContainerGender()}
             </View>
 
@@ -235,7 +233,7 @@ const styles = StyleSheet.create({
   continue_button_container: {
     justifyContent: 'center',
     alignItems: 'flex-end',
-    marginBottom: '10%',
+    marginTop: '7%'
   },
 
   continue_button: {
@@ -243,7 +241,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopLeftRadius: 50,
     borderBottomLeftRadius: 50,
-    width: 200,
+    width: 175,
     height: 50,
     backgroundColor: '#F6DEDC',
   },
@@ -252,7 +250,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 20,
     letterSpacing: 4,
-    color: '#18163A',
+    color: '#000000',
     fontFamily: 'WorkSans-Thin',
   },
   textStyle: {
@@ -261,7 +259,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 18,
     letterSpacing: 1,
-    color: '#18163A', 
+    color: '#000000', 
     marginRight: 20,
     marginLeft: 0,
   },
@@ -274,46 +272,3 @@ const styles = StyleSheet.create({
 export default CreateProfilePersonas;
 
 
-//<View style={{flex:1, }}>
-               // <DropDownPicker
-                 // open={open}
-                 // value={pgender}
-                 // items={items}
-                 // setOpen={setOpen}
-                 // setValue={setValue}
-                 // setItems={setItems}
-                 // style={{borderColor: 'white', borderRadius: 90}}
-                 // disableBorderRadius={false}
-                 // textStyle={{fontSize: 18}}
-               // />
-             // </View>
-
-// from Line 159
-
-             <View>
-            <View
-              style={{
-                flex: 1,
-                flexDirection: 'row',
-                backgroundColor: '#FFFAFA',
-                borderRadius: 40,
-                marginBottom: 40,
-                width: 350,
-                height: 50,
-              }}>
-              <View
-                style={{
-                  flex: 0.4,
-                  padding: 16,
-                  backgroundColor: '#F3777E',
-                  borderColor: '#F3777E',
-                  borderRadius: 23,
-                  borderWidth: 1,
-                }}>
-                <Text style={styles.gender_text}>
-                  Gender
-                </Text>
-              </View>
-
-              </View>
-      </View>
