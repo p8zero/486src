@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "512974687300",
+    "project_id": "naradb-92d89",
+    "storage_bucket": "naradb-92d89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512974687300:android:6808fc4294ef83e4468011",
+        "android_client_info": {
+          "package_name": "com.nara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512974687300-8mebemch941p1qr3gj4q9mt281updov9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeJ5IgM6UuDGn_fDPZTefQdS8oKALvobU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512974687300-8mebemch941p1qr3gj4q9mt281updov9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512974687300-qfgg7rlks4d0d3gpb49tdibmi0j64hes.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nara"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512974687300:android:821430ea06268069468011",
+        "android_client_info": {
+          "package_name": "com.naralytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512974687300-8mebemch941p1qr3gj4q9mt281updov9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeJ5IgM6UuDGn_fDPZTefQdS8oKALvobU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512974687300-8mebemch941p1qr3gj4q9mt281updov9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512974687300-qfgg7rlks4d0d3gpb49tdibmi0j64hes.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nara"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
